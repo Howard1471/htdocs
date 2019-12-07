@@ -1,0 +1,38 @@
+
+/* Yellow = FF0 */
+/* Blue = 00F */
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	color: #000000;
+	padding = 0em;
+	margin = 0em;
+}
+
+a.navigation 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #00F;
+	width: 100px;
+}
+a.navigation:hover 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	color: #00F;
+	/*background-color: #FF0;
+	text-decoration: none;*/
+}
+a:active 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #00F;
+	/*background-color: #FF0;*/
+	/*padding: 1px;*/
+	/*display: block;*/
+
+	/*text-decoration: none;*/
+}

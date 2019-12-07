@@ -1,0 +1,67 @@
+.wrap {
+	padding: 60px;
+	@include tablet {
+		padding: 20px 0 60px;
+	}
+	@include mobile {
+		padding: 20px 0;
+	}
+}
+.row {
+	width: $desktop-width;
+	margin: 0px auto;
+	@include tablet {
+		@include rowrap();
+	}
+	@include mobile {
+		@include rowrap();
+	}
+
+}
+
+.thirds-grid-container {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-column-gap: 5%;
+	grid-row-gap: 100px;
+	@include tablet {
+		grid-template-columns: 100%;
+	}
+	@include mobile {
+		grid-template-columns: 100%;
+		grid-row-gap: 1em;
+	}
+}
+
+.accent-background-colour {
+    background: $color__primary-darker;
+}
+
+.home .secondary-background-colour {
+    background: $color__primary-accent;
+}
+
+.trim-colour {
+    color: $color__primary-accent;
+}
+
+.trim-border {
+	border-color: $color__primary-accent;
+}
+
+.trim-border-bottom {
+	&:after {
+	    background: $color__primary-accent;
+	    content: '';
+	    width: 100%;
+	    height: 1px;
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	}
+}
+
+.trim-background-color {
+    background: $color__primary-accent;
+}
+

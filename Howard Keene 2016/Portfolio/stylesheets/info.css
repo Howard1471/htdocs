@@ -1,0 +1,68 @@
+/* CSS Document
+For Portfolio Information screens
+
+ */
+
+
+body {max-width: 1240px; margin: 0 auto; background-color:#42413c;
+		font-family:Arial, Helvetica, sans-serif;
+}
+
+	
+
+.header {background-image:url(../images/programmer_1240x350.jpg);
+			height:100px;
+			width:100%;
+			}
+.header h1 {color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:36px;
+	vertical-align:central;
+	text-align:center;
+	padding: 20px 10px 10px 10px;
+	
+}
+.ribbon a { color: #FFF; }			
+.sidebarleft {
+	width: 45%;
+	min-width:500px;
+	height: 290px;
+	background-color:#42413c;
+	float:left;
+	border: 4px; border-style:solid; border-color:#7e7d78;
+	color:#FFF;
+	padding: 5px;
+	margin-top:10px;
+	
+}
+.sidebarleft h2 h3 h4 { padding-left:10px ; margin-left: 10px; }
+
+.maincontent {
+	width: 600px;
+	height: 300px;
+	background-color:#42413c;
+	margin-left:2%;
+	margin-top:10px;
+	float:right;
+	border:4px; border-style:solid; border-color:#7e7d78;
+	color:#FFF;
+}
+.maincontent img { width: 600px; height 300px; }
+
+
+	
+.lowermain {
+		height:200px;
+		width:100%;
+		max-width:1232px;
+		background-color:#42413c;
+		margin-top: 10px;
+		float:left;
+		border: 4px; border-style:solid; border-color:#7e7d78;
+		color: #FFF;
+}
+.lowermaintext {
+	width:100%;
+	max-width:1230px;
+	padding: 5px;
+}

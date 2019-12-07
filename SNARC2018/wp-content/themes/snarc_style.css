@@ -1,0 +1,561 @@
+/*
+Theme Name: snarc
+Author: Howard Keene
+Description: South Notts Amateur Radio Club WordPress Site
+Version: 0.0.1
+Tags: snarc_Prototype
+/*
+All Classes and IDs should be prefixed with "snarc_"
+*/
+
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	max-width: 1600px;
+	width:100%;
+}
+/* was background-color: #42413C */
+/* Sidebar1 background-color: #EADCAE*/
+.snarc_Subpage body
+{
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	max-width: 750px;
+}
+	
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+h6 { font-weight:100; }
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #00F;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.snarc_container {
+	width: 100%;
+	height:100%;
+	min-height: 100vh;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-color: #FFF;
+	padding-bottom: 100px;
+}
+/*background-color: #EADCAE;*/
+	
+.snarc_container2 {
+	width: 100%;
+	background-color: #FFF;
+	padding-top:0%;
+	position:relative;
+	height: 10px;
+	padding-bottom:0px;
+}
+.holdall {
+
+}
+	
+/* was colour EADCAE */
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.snarc_header {
+	background-color: #FFF;
+	background-image:url(images/bannerpicture_8x2.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	width: 100%;
+	height:400px;
+	position:relative;
+
+}
+/*
+	z-index: 99 !important;
+	position:fixed;
+*/
+
+
+.snarc_header img { width: 100%; }
+/* was background-color: #ADB96E; */
+.snarc_header h1 { font-size:48px; color:#FFF; position: absolute; top: 20px; left: 20px; }
+.snarc_header h2  { color:#FFF; position: absolute; top: 100px; left: 20px; }
+
+.snarc_sidebar1 {
+	float: left;
+	width: 15%;
+	height:100%;
+	background-color:#FFF;
+	padding-bottom: 10px;
+	margin-left: 0;
+	position:relative;
+	top: 400px;
+}
+.snarc_sidebar1 img { padding-left:10px; }
+.snarc_sidebar1 p { margin-top: 0; padding-right: 15px; padding-left: 15px; }
+.snarc_sidebar1 a { text-decoration:underline;  margin-top: 0; padding-right: 15px; padding-left: 15px;}
+.advert_panel1 { border: 0px solid; border-color:#000;}
+
+/*was background colour #9adef5 */
+.snarc_sidebar2 {
+	float: right;
+	width: 15%;
+	min-width: 250px;
+	height:100%;
+	background-color:#FFF;
+	color:#000;
+	padding-bottom: 20px;
+	margin: 10px;
+	position:relative;
+	top: 400px;
+}
+.snarc_sidebar2 img {padding-left:10px; }
+.snarc_sidebar2 p { margin-top: 0; padding-right: 15px; padding-left: 15px; font-size:12px; }
+.snarc_sidebar2 a { text-decoration:underline;  margin-top: 0; padding-right: 15px; padding-left: 15px; font-size:12px;}
+.snarc_sidebar2a { border: 1px solid; border-color:#000; min-width: 200px; }
+.snarc_sidebar2b { border: 1px solid; border-color:#000; min-width: 200px; }
+
+/* Content Area CSS*/
+.snarc_content {
+	padding:  20px;
+	paading-bottom:100px;
+	margin: 20px;
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: #FFF;
+	border-width: 0px;
+	position:relative;
+	top: 400px;
+}
+.snarc_content h1 { color: #00F; }
+.snarc_content p { }
+
+
+.snarc_content table { padding: 10px; border: solid 1px; cellpadding:0px; cellspacing: 0px;
+width: 100%; background-color: #00F; }
+.snarc_content td { background-color: #FFF; margin: 0px; padding: 5px; padding-left: 10px; }
+.snarc_content_contact_form { border: solid 1px #666666;}
+
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.snarc_content ul, .content ol { 
+	padding: 0 15px 15px 40px; 
+/* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+.snarc_content iframe  { 
+	width: 100%; /*760px;*/
+	height: 500px;
+	padding: 10px 10px 10px 10px;
+	border: 0px;
+	}
+
+
+#Spacer {
+	width: 100%; 
+	background-color: #FFF;
+	color; #000;
+	font-weight:bold;
+	border-top: 1px solid #fff;
+	display: inline-block; 
+	position: relative;
+	float:left;}	
+
+#login {
+	width: 400px;
+	margin: 20px auto ;
+}
+#updates {
+	width: 600px;
+	margin: 20px auto ;
+}
+
+#updateswide {
+	width: 750px;
+	margin: 20px auto ;
+}
+
+/*******************************************************************************************/
+/* Was #C6D580 */
+ul.snarc_nav {
+	list-style: none;
+	border-top: 1px solid #FFF; 
+	margin-bottom: 15px; 
+}
+ul.snarc_nav li {
+	border-bottom: 1px solid #FFF; 
+}
+ul.snarc_nav a, ul.snarc_nav a:visited { 
+	padding: 5px 0px 5px 0px;
+	display: block;
+	width: 100%;  
+	text-decoration: none;
+	background-color: #CCC;
+
+	text-align:center;
+}
+/* was #C6D580 */
+ul.snarc_nav a:hover, ul.snarc_nav a:active, ul.snarc_nav a:focus { 
+	background-color:#666;
+	color: #FFF;
+}
+/***************************************************************************/
+/* ~~ The footer was background colour #CCC49F ~~ */
+.snarc_footer {
+	padding: 10px 0;
+	margin-top: 1px;
+	background-color: #FFF;
+	width: 100%;
+	text-align:center;
+	border-top:solid 1px #000000;
+}
+.snarc_footer p { font-size:9px; font-weight:bold; color: #00F;}
+.snarc_footer_div_left { }
+.snarc_footer_div_left { }
+
+
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+/*************************************************************************/
+/*Remove Margin and padding */
+.admin_nav ul, ul li {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.admin_nav li {
+	border: solid 1px #FFFFFF;
+	font-size:12px;
+}
+
+
+
+.admin_nav ul li {
+	background-color:#C6D580;
+	border-top: 1px solid #C6D580;
+	text-decoration: none;
+	width: 100%;	
+	color: #FFF;
+	cursor:pointer;
+}
+/* Link colour setting to white */
+.admin_nav a:link {
+	color:#FFF;
+}
+
+/* Background hover colour */
+.admin_nav ul li:hover {
+	background-color: #C6D580;
+	position: relative;
+}
+/*Apply the link style */
+.admin_nav ul li a {
+	padding: 5px;
+	margin 0px;
+	display: inline-block;
+	width: 100%;
+	text-decoration:none;
+	color: #fff;
+}
+.admin_nav ul li:hover > ul{
+	display: block;
+	/*position: relative;*/
+	left: 181px; top: 0px;
+	/*background-color: #F00;*/
+}
+.admin_nav ul li ul{
+    position:absolute;
+    display:none;
+}
+/* we apply different background color to 2nd level menu items*/
+.admin_nav ul li ul li{
+    background-color: #C6D580;
+}
+/* We style the color of level 2 links */
+.admin_nav ul li ul li a{
+    color:#454444;
+    display:inline-block;
+    width:120px;
+}
+/* List of possible breakpoints */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+/***************************************************************************************************************/
+/**********************  iPads (portrait and landscape) ----------- ********************************************/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+.snarc_header {
+	background-color: #FFF;
+	background-image:url(images/bannerpicture_8x2.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: auto;
+	position:absolute;
+	top:0px;
+	left:0px;	
+}
+.snarc_header img { width: 100%;  }
+.snarc_header h1 { font-size:36px; color:#FFF; position: absolute; top: 20px; left: 20px; }
+.snarc_header h2 { font-size:24px; color:#FFF; position: absolute; top: 100px; left: 20px; }
+
+.snarc_sidebar1 {
+	float: left;
+	width: 15%;
+	height:100%;
+	background-color:#FFF;
+	padding-bottom: 10px;
+	margin-left: 0;
+	position:relative;
+	top: 400px;
+}
+.snarc_sidebar1 img { padding-left:10px; }
+.snarc_sidebar1 p { margin-top: 0; padding-right: 15px; padding-left: 15px; }
+.snarc_sidebar1 a { text-decoration:underline;  margin-top: 0; padding-right: 15px; padding-left: 15px;}
+.advert_panel1 { border: 0px solid; border-color:#000;}
+
+/*was background colour #9adef5 */
+.snarc_sidebar2 {
+	float: left;
+	width: 15%;
+	min-width: 250px;
+	height:100%;
+	background-color:#FFF;
+	color:#000;
+	padding-bottom: 10px;
+	margin: 10px;
+	position:relative;
+
+}
+.snarc_sidebar2 img {padding-left:10px; }
+.snarc_sidebar2 p { margin-top: 0; padding-right: 15px; padding-left: 15px; font-size:12px; }
+.snarc_sidebar2 a { text-decoration:underline;  margin-top: 0; padding-right: 15px; padding-left: 15px; font-size:12px;}
+.snarc_sidebar2a { border: 1px solid; border-color:#000; min-width: 200px; }
+.snarc_sidebar2b { border: 1px solid; border-color:#000; min-width: 200px; }
+
+/* Content Area CSS*/
+.snarc_content {
+	padding:  20px;
+	margin: 20px;
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: #FFF;
+	border-width: 0px;
+	position:relative;
+	top: 400px;
+}
+
+
+
+
+
+
+}
+
+/********************** iPads (landscape) ----------- *********************************************************/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/***************************** Samsung Galaxy S3 ----------- ***************************************************/
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+/***************************** Samsung Galaxy S5 test ----------- ***************************************************/
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait){
+/* and (-webkit-device-pixel-ratio: 2)*/
+/* Styles */
+.snarc_header {
+	background-color: #FFF;
+	background-image:url(images/bannerpicture_8x2.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 200px;
+	position:absolute;
+	top:0px;
+	left:0px;	
+}
+.snarc_header img { width: 100%; height: 200px;}
+.snarc_header h1 { font-size:24px; color:#FFF; position: absolute; top: 20px; left: 20px; }
+.snarc_header h2 { font-size:18px; color:#FFF; position: absolute; top: 100px; left: 20px; }
+
+.snarc_sidebar1 {
+	float: left;
+	width: 100%;
+	height:100%;
+	background-color:#FFF;
+	padding-bottom: 10px;
+	margin-left: 0px;
+	position: absolute;
+	top: 200px;
+
+}
+.snarc_sidebar1 img { padding-left:10px; }
+.snarc_sidebar1 p { margin-top: 0; padding-right: 15px; padding-left: 15px; }
+.snarc_sidebar1 a { text-decoration:underline;  margin-top: 0; padding-right: 15px; padding-left: 15px;}
+.advert_panel1 { border: 0px solid; border-color:#000;}
+
+/* Content Area CSS*/
+.snarc_content {
+	padding:  5px;
+	margin: 5px;
+	width: 100%;
+	height: 100%;
+	float: left;
+	background-color: #FFF;
+	border-width: 0px;
+	position: relative;
+
+}
+
+/*was background colour #9adef5 */
+.snarc_sidebar2 {
+	float: left;
+	width: 100%;
+	min-width: 250px;
+	height:100%;
+	background-color:#FFF;
+	color:#000;
+	padding-bottom: 10px;
+	margin: 10px;
+	position:relative;
+
+}
+.snarc_sidebar2 img {padding-left:10px; }
+.snarc_sidebar2 p { margin-top: 0; padding-right: 15px; padding-left: 15px; font-size:12px; }
+.snarc_sidebar2 a { text-decoration:underline;  margin-top: 0; padding-right: 15px; padding-left: 15px; font-size:12px;}
+.snarc_sidebar2a { border: 1px solid; border-color:#000; min-width: 200px; }
+.snarc_sidebar2b { border: 1px solid; border-color:#000; min-width: 200px; }
+}
+
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+

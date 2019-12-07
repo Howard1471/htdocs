@@ -1,0 +1,6 @@
+[info]
+title=Template3
+description=Frame based template
+version=
+format=
+layout=[R(150,50,400)F("headerframe","Navigation",[C(200,400,200)F([R(150,100,150)F("adpanel1","adpanel2","adpanel3")],"EditableFrame",[R(150,100,150)F("adpanel4","adpanel5","adpanel6")])])]

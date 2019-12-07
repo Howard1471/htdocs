@@ -1,0 +1,43 @@
+
+/*
+Reporter Module Style Sheet
+
+/* body and wrap - outer container for whole page */
+body, html {margin:0; padding:0;}
+body { min-width:1000px; background-color: #CCCCFF;}
+body.Doclist {  background-color: #E4EDF4; min-width: 675px; background:url(""); width:700px; }
+body.Upload { min-width:675px; background-color: #CCCCFF;}
+body.Report {  background-color: #FFFFFF; min-width: 675px; }
+
+#Main_Content { float:left; width: 825px; height:800px; background-color: #FFFFFF; }
+#Main_Content { padding: 5px 5px 0 0; }
+#Main_Content p {font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal; margin:0 0 5px 0; color:#0000CC;}
+/*#Main_Content {  border-top:solid 1px; border-bottom:solid 1px; border-left: solid 1px; border-right: solid 1px;}*/
+
+#IFrame { float:left ;border:solid 0px; width: 825px; height: 350px; background-color:#FFFFFF; margin: 0 0 0 0px ; }
+/*iframe width = 825 height = 350 frameborder="no" align= left align = top marginheight = "0" marginwidth="0"*/
+td.profile { vertical-align:top;}
+td.Slideframe { background:url('paper-slide-frame-Grey-150x150.gif') no-repeat; }
+
+/* universal text styles */
+h1 {font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal; margin:0 0 5px 0; color:#000;}
+h2 {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#000;}
+h3 {font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:bold; margin:0 0 5px 0; color:#000;}
+h4 {font-family:Arial, Helvetica, sans-serif; font-size:18pt; font-weight:bold; margin:0 0 5px 0; color:#000;}
+h5 {font-family:Arial, Helvetica, sans-serif; font-size:24pt; font-weight:normal; margin:0 0 5px 0; color:#000;}
+h6 {font-family:Arial, Helvetica, sans-serif; font-size:36pt; font-weight:normal; margin:0 0 5px 0; color:#000;}
+
+h1.Box1 { padding-left: 10px ;}
+h1.Italic { font-style:italic; margin:0 0 0 0px;}
+h1.doclist { margin: 0 0 0 0px; }
+h3.MenuHeader { color:#FFFFFF;}
+img.box { border-top:solid 1px; border-bottom:solid 1px; border-left: solid 1px; border-right: solid 1px;}
+
+a { font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal;;margin:0 0 5px 0; color:#0000CC;}
+a:visited { color:#6600FF }
+a.Newslist { font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:Bold;;margin:0 0 5px 0; color:#0000CC; }
+li { padding-left:10px; padding-top: 0px;font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color: #fff;}
+p.Italic {  font-family: Arial, Helvetica, sans-serif ; font-size:10pt; font-style:italic; margin:0 0 0 0px;}
+p.subtitle {  font-family: Arial, Helvetica, sans-serif ; font-size:10pt; font-style: normal; margin:0 0 0 0px;} 
+p.Title {  font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:Bold;;margin:0 0 5px 0; color:#0000CC;}
+table.Userform { background-color:#0FF; }

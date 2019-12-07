@@ -1,0 +1,110 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 2px solid;
+	border-color: #fff;
+	background: $color__background-button;
+	color: #fff;
+	@include font-size(1);
+	line-height: 1;
+	padding: .5em 1em;
+	font-family: $font__main;
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}
+
+
+
+/**
+	primary button 
+	@TODO refactor colours to use variables
+**/
+
+a.btn {
+	padding: 8px 13px;
+    border-radius: 5px;
+    min-width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+a.btn--primary {
+    background-color: #0F1E29;
+    color: #fff;
+    font-size: 0.9em;
+    transition: all 0.5s ease-out;
+    &.large {
+	    font-size: 1.3em;
+	}
+}
+
+a.btn--primary:hover, .btn--primary.inverted:hover {
+    background-color: #307bad;
+    color: #fff;
+}
+
+a.btn--primary.inverted {
+    background: #68B1DF;
+}
+
+a.btn--primary.inverted.inactive {
+    background: #fff;
+    border: 1px solid #68B1DF;
+    color: #68B1DF;
+    &:hover {
+    	background: #68B1DF;
+    	color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+/*
+
+.button {
+	display: inline-block;
+	border: 2px solid;
+	border-color: #fff;
+	background: $color__background-button;
+	color: #fff;
+	@include font-size(1);
+	line-height: 1;
+	padding: .5em 1em;
+	font-family: $font__main;
+	transition: all 0.5s ease;
+	&:hover {
+		border-color: $color__border-button-hover;
+		color: #fff;
+		background: $color__primary-accent;
+	}
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+	margin-top: 20px;
+	&:hover {
+		border-color:$color__primary-dark;
+	}
+}
+.large {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 1em 2em;
+}
+
+.dark {
+    background: $color__primary-dark;
+}
+*/

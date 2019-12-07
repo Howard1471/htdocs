@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JQuery Test 3</title>
+
+<script src="JQuery\jquery-1.10.2.min.js"></script>
+
+<script>
+function handleFileSelect(evt) 
+{
+    var files = evt.target.files; // FileList object
+
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+      output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+                  f.size, ' bytes, last modified: ',
+                  f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+                  '</li>');
+    }
+    document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+
+}
+
+function GetFolderContents( dir )
+{
+//var dir = "Src/themes/base/images";
+var fileextension=".jpg";
+      $.ajax({
+//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+            url: dir,
+            success: function (data) {
+                //Lsit all png file names in the page
+                $(data).find("a:contains(" + fileextension + ")").each(function () {
+                    var filename = this.href.replace(window.location.host, "").replace("http:///","");               
+                    $("body").append($("<img src=" + Dir + filename + "></img>"));
+                });
+            }
+        });
+}
+document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
+
+</head>
+
+<body>
+
+<br /><br /><br />
+<input type="file" id="files" name="files[]" multiple size="80" />
+<output id="list"></output>
+
+
+
+
+</body>
+</html>

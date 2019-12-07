@@ -1,0 +1,26 @@
+{
+  "name": "cyclingclub",
+  "version": "1.0.0",
+  "description": "a cycling club website for WordPress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cycling",
+    "club",
+    "wordpress",
+    "theme"
+  ],
+  "author": "Elliott Richmond",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "npm": "^6.1.0"
+  }
+}

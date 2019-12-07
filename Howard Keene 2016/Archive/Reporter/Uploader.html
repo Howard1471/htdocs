@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+         "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="stylesheets/Reporter.css" type="text/css" media="screen">
+
+
+<title>Reporter</title>
+<style>
+<!-- Additional Style changes -->
+
+</style>
+</head>
+<body>
+
+<table align="center" width="800" border="0" cellpadding="0" cellspacing="0" >
+<tr><td>
+<h4>Reporter Upload</h4>
+<h1>Website specific Text</h1>
+</td>
+</tr><tr><td>
+<!-- Main Content -->
+<div id="content">
+<form  action="Upload.php" method="POST" enctype="multipart/form-data">
+  <input type="hidden" name="MAX_FILE_SIZE" value="6291456" ><!-- 6291456=6Mb --><!-- 10485760=10Mb -->
+  <table bgcolor="#33FFFF" width="750px" height="350px"border="1" cellspacing="0" cellpadding="0">
+  <tr><td>Headline:</td></tr>
+  <tr><td><Input type=text  name="headline" size="40">(40 Chars Max)</td></tr>
+  <tr><td>Subtitle:</td></tr>
+  <tr><td><Input type=text  name="subtitle" size="80">(80 Chars Max)</td></tr>
+  <tr><td>Report text filename: ( Notepad txt file )</td></tr>
+  <tr><td><Input type="file" name="userfile" size="80"></td></tr>
+  <tr><td>Photo filename:</td></tr>
+  <tr><td><Input type="file" name="imagefile" size="80"></td></tr>
+  <tr><td>Photo Title:</td></tr>
+  <tr><td><Input type=text  name="phototitle" size="40">(40 Chars Max)</td></tr>
+  <tr><td colspan="2" align="center"><input type="submit" value = "Upload Files" ><br></td></tr>
+   </table>
+</form>
+</div>
+</td></tr></table>
+
+
+</body>
+</html>

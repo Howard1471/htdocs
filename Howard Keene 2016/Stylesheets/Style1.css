@@ -1,0 +1,69 @@
+/*
+Howardkeene.co.uk 2013 Stylesheet
+
+/* body and wrap - outer container for whole page */
+body, html {margin:0; padding:0;}
+body {min-width:1242px; background-color: #FFFFFF;} // A3ACB3
+body.flash { background-color: #000000;  overflow:hidden; }
+//body { background:url("../Graphics/Full Panel LHS Slither 17x653.jpg") repeat-x ;}
+#wrap { width:1242px; }
+
+/* universal text styles */
+h1 {font-family:Arial, Helvetica, sans-serif; font-size:36pt; font-weight:bold; margin:0 0 5px 0; color:#FFFFFF;}
+h2 {font-family:Arial, Helvetica, sans-serif; font-size:24pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h3 {font-family:Arial, Helvetica, sans-serif; font-size:18pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h4 {font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h5 {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h6 {font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+
+p {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+p.header {	font-family:Times New Roman, Times, Serif;font-size: 36pt;font-weight: normal;font-style:italic;color: #000000;
+	text-align:center;padding: 0,0,0,0;}
+a {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; text-decoration:underline; margin:0 0 5px 0; text-decoration:underline; color:#0000ff;}
+a:focus, a:hover, a:active {text-decoration:none; color:#ff0000;}
+ul {margin:0 0 5px 1px;}
+li {list-style:none; padding-left:15px; no-repeat 0 2px; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color: #fff;}
+
+/* image <img class="l" src="url" /> style classes */
+img {border:0;} /* border style for all images - no class = in-line image */
+img.l {float:left;} /* left-aligned images with text wrapping */
+img.r {float:right;} /* right-aligned images with text wrapping */
+img.b {display:block;} /* left-aligned image with no text wrap - nb: replaces <br /> tag */
+img.h {float:right; height:150px; width:200px; }
+
+/* header - top title bar */
+/* logodiv1 - used to display logo */
+/*#logodiv1 { align:left; background:url(../images/...") no-repeat; height:150px; width:200; padding: 0px;}*/
+/*#logodiv2 { align:right; background:url("../images/FullHeader.gif") no-repeat; height:150px; width:10000px; padding: 0px; }*/
+/* header - top title bar */
+/*#header { align:left; background:url("../images/HeaderBlackGradientV2.jpg") no-repeat; }*/
+#header { align:left; border: solid 0px; width:1000px;height:100px; background-image:url("../images/header.jpg");}
+#header h1{ text-align:center; padding:10px 0 10px 0; margin:0; line-height:90px; color:#000;}
+#header2 { border: solid 0px;  height: 70px; width: 800px;}
+//#leftside { float:left; border:solid 0px; width:100px; height:500px; background-image:url("../images/bookend_left.gif");}
+//#rightside { float:left; border:solid 0px; width:100px; height:500px;  background-image:url("../images/bookend_right.gif");}
+/* content - main content area height:800px;*/
+//#content {float:left; padding:0px; width:800px; height:500px; border:solid 0px; font-color: #FFFFFF;background-image:url("../images/hardbacksonly800x500.jpg");}
+
+table.fix { border-collapse:collapse; border: solid; }
+td.AllRound { border: solid;}
+td.BottomRight { border-bottom: solid; border-left: hidden; border-right: solid; border-top:hidden; }
+td.BottomLeft { border-bottom: solid; border-left: solid; border-right: hidden; border-top:hidden; }
+td.UpAndOver { border-bottom: hidden; border-left: solid; border-right: solid; border-top:solid;}
+td.DownAndUnder { border-bottom: solid; border-left: solid; border-right: solid; border-top:hidden;}
+td.RightHand { border-bottom: hidden; border-left: hidden; border-right: solid; border-top:hidden;}
+td.TopRight { border-bottom: hidden; border-left: hidden; border-right: solid; border-top:solid;}
+td.TopLeft { border-bottom: hidden; border-left: solid; border-right: hidden; border-top:solid;}
+td.LeftScoop { border-bottom: solid; border-left: solid; border-right: hidden; border-top:solid;}
+td.RightScoop { border-bottom: solid; border-left: hidden; border-right: solid; border-top:solid;}
+
+#flashContent { width:100%; height:100%; }
+#box { border-top:solid 1px; border-bottom:solid 1px; border-left: solid 1px; border-right: solid 1px;}
+
+/* footer */
+#footer {clear: both; text-align:center; margin-top:5px; border-top:1px solid #000; height:100px; background-image:url("../images/footer.jpg"); }
+/* background-image:url("../images/footer.jpg"); */
+#footer p, #footer a { margin-top:5px; font-size:9px; color:#000000;}
+#footer ul {margin:0; padding:0; list-style:none;}
+#footer li {display:inline; margin:0; padding:5px;}
+

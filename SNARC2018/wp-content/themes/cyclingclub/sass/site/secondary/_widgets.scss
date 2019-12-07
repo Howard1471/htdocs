@@ -1,0 +1,39 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+
+.widget_search label {
+    padding:0;
+    margin:0;
+    display: inline-block;
+}
+
+.widget_search input[type="search"] {
+	margin: 0;
+    border-radius: 0;
+    display: inline;
+    border: 3px solid #67b1e0;
+    padding: 3px 9px;
+}
+
+.widget_search input[type="submit"] {
+    margin: 0;
+    display: inline;
+    border: 3px solid #67b1e0;
+    padding: 7px 15px;
+    transition: .5s all;
+    color: #ffffff;
+    background: #67b1e0;
+    &:hover {
+	    background: #fff;
+	    color: $color__primary-accent;
+    }
+    
+    
+}

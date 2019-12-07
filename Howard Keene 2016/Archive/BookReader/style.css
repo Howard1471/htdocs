@@ -1,0 +1,79 @@
+/* body and wrap - outer container for whole page */
+body,
+html {margin:0; padding:0;}
+body {min-width:800px; background-color: #000;}
+/* body {min-width:800px; background:url("image") repeat-y ;} */
+#wrap {margin:15px auto; width:1000px; background-color: #ff0000;}
+
+/* universal text styles */
+h1 {font-family:Arial, Helvetica, sans-serif; font-size:36pt; font-weight:bold; margin:0 0 5px 0; color:#000;}
+h2 {font-family:Arial, Helvetica, sans-serif; font-size:24pt; font-weight:bold; margin:0 0 5px 0; color:#000;}
+h3 {font-family:Arial, Helvetica, sans-serif; font-size:18pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+h4 {font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+h5 {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+h6 {font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+p {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+a {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; text-decoration:underline; margin:0 0 5px 0; text-decoration:underline; color:#660066;}
+a:focus, a:hover, a:active {text-decoration:none; color:#6600CC;}
+ul {margin:0 0 5px 1px;}
+li {list-style:none; padding-left:15px; no-repeat 0 2px; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color: #660066;}
+
+
+/* image <img class="l" src="url" /> style classes */
+img {border:0;} /* border style for all images - no class = in-line image */
+img.l {float:left;} /* left-aligned images with text wrapping */
+img.r {float:right;} /* right-aligned images with text wrapping */
+img.b {display:block;} /* left-aligned image with no text wrap - nb: replaces <br /> tag */
+img.h {float:right; height:150px; width:200px; }
+
+
+/* header - top title bar */
+#header {}
+#header h1{ text-align:left; padding:10px 0 10px 0; margin:0; line-height:90px; color:#000;}
+/* logodiv1 - used to display logo */
+/*#logodiv1 {float:right; margin-left:25px; background:url("image") no-repeat; height:150px; width:200px;}
+*/
+#shelfdiv1 { float:left; padding:5px 0; width:800px; }
+#shelfdiv2 { float:left; padding:5px 0; width:800px; border-top:solid 1px;}
+#shelfdiv3 { float:left; padding:5px 0; width:800px; border-bottom:solid 1px;}
+#shelfdiv4 { float:left; padding:5px 0; width:800px; border-top:solid 1px; border-bottom:solid 1px;}
+#spacer1 {float:left; width:175px; border-top:solid 0px; border-bottom:solid 0px; border-left: solid 0px; border-right: solid 0px;}
+
+/* menu - left vertical menu panel */
+// #menu { float:left; padding:5px 0; width:150px;  height:300px; border-top:solid 1px; border-bottom:solid 1px; border-left: solid 1px; border-right: solid 1px;}
+#menu {float:left; padding:5px 0; width:150px; }
+#menu ul {margin:0; padding:0; list-style:none;}
+#menu li { background:none; margin:0; font-family:"Comic Sans MS" ; text-align:left; line-height:50px; }
+#menu a  { display: block; font-weight:normal; font-size:18px; color:#fff;  font-family:"Comic Sans MS" ; text-decoration:none; text-align:center ; line-height-50px; 
+			padding-right:10px;	background:url("Button image") no-repeat; height:50px; width:150px;}
+#menu a:active, #menu a:focus, #menu a:hover {background:url("Button image") no-repeat; color:#00f;}
+#menu table { border: 1; cellpadding: 0 ; cellspacing: 0 ;}
+//padding:10px 25px 0 25px; line-height-50px;
+  
+/* Navbar - Horizontal menu panel */
+#Navbar { background:#fff; width:600px; height: 35px; border-top:solid 0px; border-bottom:solid 0px;}
+#Navbar ul {margin:0; padding:0; list-style:none;}
+#Navbar li {display:inline; margin:0; padding:10px;}
+#Navbar a { display: block; font-family:"Comic Sans MS" ;font-weight:normal; font-size:18px; color:#ff0; text-decoration:none; text-align:center ;  padding:2px 0 0 0 ; 
+			background:url("Button image") no-repeat; height:30px; width:150px;}
+#Navbar a:active, #Navbar a:focus, #Navbar a:hover {background:url("Button image") no-repeat;color:#00f;}
+#menu td { align: center; }
+#menu table { border: 0; cellpadding: 0 ; cellspacing: 0 ;}
+#spacer2 {float:left; width:600px; height: 30px; border-top:solid 0px; border-bottom:solid 0px; border-left: solid 0px; border-right: solid 0px;}
+
+/* content - main content area */
+#content {float:right; padding:10px; width:700px; height:100%;  border:solid 0px;}
+#content img.c {float:center;}
+/* #content {background:url("logo.gif") repeat;} */
+#content ul {margin-bottom:0;}
+#content h3,  #content p {font-family:"Comic Sans MS" ;padding:5px;}
+#content h2, #content h1 {  font-family:"Comic Sans MS" ;text-align: centre ;}
+#content p,  #content a { text-align:left;  font-family:"Comic Sans MS" ; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#000000; border:solid 0px;}
+#content a { color:#0000ff; }
+/*Box styles */
+#box { border-top:solid 1px; border-bottom:solid 1px; border-left: solid 1px; border-right: solid 1px;}
+/* footer */
+#footer {clear: both; text-align:center; margin-top:5px; border-top:1px solid #000; }
+#footer p, #footer a { margin-top:5px; font-size:9px; color:#000000;}
+#footer ul {margin:0; padding:0; list-style:none;}
+#footer li {display:inline; margin:0; padding:5px;}

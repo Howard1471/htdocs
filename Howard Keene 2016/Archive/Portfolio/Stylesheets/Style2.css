@@ -1,0 +1,52 @@
+/*
+Style2 Sheet
+
+/* body and wrap - outer container for whole page */
+body, html {margin:0; padding:0;}
+body {min-width:900px; background-color: #000000;}
+#wrap {margin:2px auto; width:900px; border: 0px solid #FFF;}
+
+/* universal text styles */
+h1 {font-family:Arial, Helvetica, sans-serif; font-size:36pt; font-weight:bold; margin:0 0 5px 0; color:#FFFFFF;}
+h2 {font-family:Arial, Helvetica, sans-serif; font-size:24pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h3 {font-family:Arial, Helvetica, sans-serif; font-size:18pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h4 {font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h5 {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h6 {font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+
+p {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#ffffff;}
+p.subheading { color:#0FF ;}
+p.text {font-size:10pt ; }
+
+a {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; color:#FFF text-decoration:none; margin:0 0 5px 0; background-image:url(../images/tabs/Taboff.png);}
+a:focus, a:hover, a:active {text-decoration:none;  background-image:url(../images/tabs/tabon.png);}
+ul {margin:0 0 5px 1px;}
+li {list-style:none; padding-left:15px; no-repeat 0 2px; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color: #fff;}
+
+/* image <img class="l" src="url" /> style classes */
+img {border:0;} /* border style for all images - no class = in-line image */
+img.l {float:left;} /* left-aligned images with text wrapping */
+img.r {float:right;} /* right-aligned images with text wrapping */
+img.b {display:block;} /* left-aligned image with no text wrap - nb: replaces <br /> tag */
+img.h {float:right; height:150px; width:200px; }
+
+#Column1 { width: 300px; height:300px; background-color:#000000; float:left;background-image:url(../images/main1.jpg); background-repeat:no-repeat; background-position:center;   }
+#Column1 img {border:solid #FFF 5px ; margin: 20px 50px 20px 50px;}
+#Bannerl { width: 700px; height:300px; background-color:#000000; float:left; }
+#Column2 { width: 1000px; height:550px; background-color:#000000; float:left; }
+#header { align:left; border: solid 0px #FFF; width:700px;height:100px; margin-top: 25px;}
+
+#content {float:left; padding:10px; width:860px; border:solid 0px #FFF; padding-left: 25px;}
+#header h1 {text-align:center; padding:10px 0 10px 0; margin:0; line-height:90px; color:#FFFFFF;}
+#SubHeader h3 { text-align:center; padding:10px 0 10px 0; margin:0; line-height:20px; color:#FFFFFF;}
+
+
+
+
+/* footer */
+#footer {clear: both; text-align:center; margin-top:5px; border-top:1px solid #000; height:100px; background-image:url("../images/footer.jpg"); }
+/* background-image:url("../images/footer.jpg"); */
+#footer p, #footer a { margin-top:5px; font-size:9px; color:#000000;}
+#footer ul {margin:0; padding:0; list-style:none;}
+#footer li {display:inline; margin:0; padding:5px;}
+

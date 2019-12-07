@@ -1,0 +1,66 @@
+.home {
+	.content-area {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}	
+	article {
+	    color: #fff;
+	    text-align: center;
+	    padding: 0;
+	    margin: 0;
+	    border-left: 0;
+   	}
+	.entry-header {
+	    min-height: 60px;
+	}
+	.entry-title {
+		margin: 0;
+	}
+	.entry-title {
+		text-transform: inherit;
+		font-weight: 400;
+		margin: 20px 0 0;
+	}
+	.entry-content {
+		position: relative;
+		margin: 0 0 20px;
+	}
+	.button {
+	    bottom: 0;
+   	}
+	p {
+		font-weight: 100;
+	}
+	.site-main {
+		margin: 0;
+	}
+	#front-page a {
+		color: lighten($color__primary-accent, 20%);
+		transition: all 0.5s ease;
+		&:hover {
+			color: lighten($color__primary-accent, 50%);
+		}
+		&.button {
+			color: #fff;
+		}
+	}
+
+}
+
+.home .child-pages {
+	.entry-content {
+		min-height: 120px;
+		position: relative;
+		margin: 0px;
+		p {
+		    color: #aaa;
+		    margin-bottom: 60px;
+		}   	
+	}
+	.button {
+	    position: absolute;
+	    left: 25%;
+	    right: 25%;
+   	}
+}

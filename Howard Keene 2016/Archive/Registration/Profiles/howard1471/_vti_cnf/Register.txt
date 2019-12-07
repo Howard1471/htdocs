@@ -1,0 +1,12 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TW|12 Feb 2009 14:22:00 -0000
+vti_author:SR|ADVENT_8111\\Howard
+vti_modifiedby:SR|ADVENT_8111\\Howard
+vti_nexttolasttimemodified:TW|12 Feb 2009 14:22:00 -0000
+vti_timecreated:TR|12 Feb 2009 14:19:53 -0000
+vti_cacheddtm:TX|12 Feb 2009 14:19:53 -0000
+vti_filesize:IR|159
+vti_extenderversion:SR|6.0.2.8161
+vti_backlinkinfo:VX|
+vti_syncwith_eckingtononline.co.uk\:21/eckingtononline.co.uk:TW|12 Feb 2009 14:19:53 -0000
+vti_syncofs_eckingtononline.co.uk\:21/eckingtononline.co.uk:TW|12 Feb 2009 14:22:00 -0000

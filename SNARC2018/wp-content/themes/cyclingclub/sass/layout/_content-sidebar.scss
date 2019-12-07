@@ -1,0 +1,170 @@
+.content-area {
+	float: left;
+	margin: 0 (-$size__site-sidebar) 0 0;
+	width: $size__site-main;
+	@include mobile {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+}
+
+.site-main {
+	//margin: 0 $size__site-sidebar 0 0;
+}
+
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: $size__site-sidebar;
+	@include mobile {
+		float: none;
+		overflow: inherit;
+		width: 100%;
+	}
+}
+
+.site-footer {
+	clear: both;
+	@include mobile {
+		font-size: 12px;
+	}
+}
+
+.site-info {
+	text-align: center;
+	
+	a {
+		color:$color__primary-accent;
+		transition: all .5s;
+		&:hover {
+			color:#fff;
+		}
+	}
+}
+
+.site-main  {
+    margin-top: 45px;
+}
+
+.site-content .widget-area {
+    padding-top: 45px;
+}
+
+
+#secondary {
+		
+	.widget {
+	    background: $color__secondary-pale;
+	    border-left: 1px solid rgba(3, 169, 244, 0.2);
+	    margin-left: 1em;
+	    @include mobile {
+		    margin-left: 0;
+	    }
+	    padding: 1.5em;
+		color: $color__body-text;
+		.widget-title {
+		    margin: 0 0 1em;
+		    padding: 0;
+		    text-transform: inherit;
+		    color: #838383;
+		    font-size: 15px;
+		}
+		
+		ul {
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+			li {
+			    font-size: 1em;
+			    a {
+				    
+			    }
+			    ul {
+					padding-left: 1em;
+					border-top: 1px solid rgba(3, 169, 244, 0.2);
+					padding: 1em;
+					margin: 1em 0;
+					border-bottom: 1px solid rgba(3, 169, 244, 0.2);
+				    li {
+					    font-size: 0.9em;
+					    ul {
+						    padding-left: 1em;
+						    li {
+							    font-size: 0.8em;
+						    }
+					    }
+				    }
+			    }
+			}
+		}
+		a {
+			
+		}
+
+		
+	}
+
+}
+
+#recentcomments li {
+    margin-bottom: 1em;
+}
+#recentcomments li:last-child {
+    margin-bottom:0px;
+}
+
+#recentcomments .recentcomments .comment-author-link {
+    display: block;
+    font-style:  italic;
+    font-weight: bold;
+}
+
+
+#tertiary {
+	
+	.widget {
+		color: #fff;
+		.widget-title {
+		    font-size: 1em;
+		    text-transform: initial;
+		}
+		
+		ul {
+		    padding:0px;
+		    list-style:none;
+			li {
+				
+			    ul {
+					padding-left: 1em;
+					border-top: 1px solid rgba(255, 255, 255, 0.3);
+					padding: 1em;
+					margin: 1em 0;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+				    li {
+					    font-size: 0.9em;
+					    ul {
+						    padding-left: 1em;
+						    li {
+							    font-size: 0.8em;
+						    }
+					    }
+				    }
+			    }
+			}
+		}
+		a {
+		    color:#fff;
+		    transition: all .5s;
+			&:hover {
+			    color:$color__primary-dark;
+			}
+		}
+
+	}
+}
+
+
+
+
+

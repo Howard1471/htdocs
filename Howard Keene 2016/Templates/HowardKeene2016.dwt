@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!-- TemplateBeginEditable name="Config" -->
+
+<title>Howard Keene</title>
+<!-- TemplateEndEditable -->
+
+<!-- TemplateBeginEditable name="Stylesheets" -->
+<link href="../Stylesheets/Style2016.css" rel="stylesheet" type="text/css" media="screen">
+<!-- TemplateEndEditable -->
+
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+<!-- TemplateBeginEditable name="HeaderRegion" -->
+HeaderRegion
+<!-- TemplateEndEditable -->
+</div><!-- End of Header-->
+
+<div class = "Ribbon">
+<!-- TemplateBeginEditable name="Ribbon" -->
+Ribbon
+<!-- TemplateEndEditable -->
+</div><!-- End of Ribbon -->
+
+<div class = "Sidebar1">
+<!-- TemplateBeginEditable name="Sidebar1" -->
+Sidebar1
+<!-- TemplateEndEditable -->
+</div><!-- End of Sidebar1-->
+
+<div class = "content">
+<!-- TemplateBeginEditable name="MainContent" -->
+MainContent
+<!-- TemplateEndEditable -->
+</div><!-- End of Content -->
+
+<div class = "footer">
+<!-- TemplateBeginEditable name="Footer" -->
+Footer
+<!-- TemplateEndEditable -->
+</div><!-- End of footer -->
+</div> <!-- end of #wrap -->
+</body>
+
+</html>

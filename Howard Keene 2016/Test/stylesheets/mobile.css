@@ -1,0 +1,112 @@
+/* CSS Document */
+
+@media screen and ( max-width: 800px )
+{
+	.header {
+	height: 484px;
+	background-image:url(../Assignment/images/bannerpicture_1000x484.jpg);
+	}
+
+	.header h1 { color:#FFF; float: right;
+					font-size:64px;
+	
+	 }
+	.header p  { color:#FFF; float: right;
+					font-size:48px; }
+
+.sidebar1 {
+	width: 100%;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+.sidebar1 img { padding-left:10px  width:50xp; height:71px }
+.sidebar1 p { margin-top: 0; padding-right: 15px; padding-left: 15px; }
+.sidebar1 a { text-decoration:underline;  margin-top: 0; padding-right: 15px; padding-left: 15px;}
+
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #C6D580; 
+	margin-bottom: 15px; 
+}
+ul.nav li {
+	border-bottom: 1px solid #000; /*#C6D580;*/
+	float: none;
+	font-size:36px;
+	text-align:center;
+	text-decoration:none;
+}
+ul.nav a, ul.nav a:visited { 
+	padding: 5px 0px 5px 0px;
+	display: block;
+	width: 100%;  
+	text-decoration: none;
+	background-color: #C6D580;
+}
+/* was #C6D580 */
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background-color: #ADB96E;
+	color: #FFF;
+}
+/* was #ADB96E */
+/* Content Area CSS*/
+.content {
+	padding: 10px 0;
+	width: 100%;
+	min-height: 600px;
+	float: left;
+	background-color: #9adef5;
+	border-width: 1px;
+}
+.content iframe  { 
+	width: 97%; /*760px;*/
+	height: 500px;
+	padding: 10px 10px 10px 10px;
+	border: 0px;
+	}
+	
+.content table { padding: 10px; }
+.content2 {
+	padding: 5px 0;
+	width: 740px;
+	min-height: 500px;
+	float: left;
+	background-color: #9adef5;
+	border-width: 1px;
+}
+/* Table widths for some pages */
+#Article_Table { width: 100%; }
+#Td_1 { width: 65%; font-size:36px; }
+#Td_2 { width: 15%; font-size:24px; }
+#Td_3 { width: 19%; font-size:18px; }
+
+#SEvents_Table { width: 100%; }
+#Td_4 { width: 50%; font-size:36px; }
+#Td_5 { width: 34%; font-size:36px; }
+#Td_6 { width: 15%; font-size:18px; }
+
+#Members_Table { width: 100%; }
+#Td_7 { width: 25%; font-size:36px; }
+#Td_8 { width: 21%; font-size:36px; }
+#Td_7a { width: 20%; font-size:36px; }
+#Td_8a { width: 21%; font-size:36px; }
+
+#Hlink_Table { width: 750px; }
+#Td_9 { width:100%; font-size:24px; }
+
+
+
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; 
+/* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+
+
+
+
+
+
+
+}

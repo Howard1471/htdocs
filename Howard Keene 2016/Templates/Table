@@ -1,0 +1,20 @@
+CREATETABLE`Register` (
+
+ `UserRef` INT UNSIGNED NOTNULLAUTO_INCREMENT ,
+ `Username` TEXT NOTNULL ,
+ `Password` TEXT NOTNULL ,
+ `Forename` TEXT NOTNULL ,
+ `Surname` TEXT NOTNULL ,
+ `Address1` TEXT NOTNULL ,
+ `Address2` TEXT NOTNULL ,
+ `Address3` TEXT NOTNULL ,
+ `Town` TEXT NOTNULL ,
+ `Postcode` TEXT NOTNULL ,
+ `Country` TEXT NOTNULL ,
+ `Telephone` TEXT NOTNULL ,
+ `Mobile` TEXT NOTNULL ,
+ `Status` INT NOTNULL ,
+ `Expiry` DATE NOTNULL ,
+ PRIMARYKEY (`UserRef`)
+ )
+  

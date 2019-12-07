@@ -1,0 +1,233 @@
+# Copyright (C) 2018 Elliott Richmond
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: cyclingclublite 1.0.0\n"
+<<<<<<< HEAD
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/cyclingclublite\n" 
+"POT-Creation-Date: 2018-02-19 16:00+0100\n"
+=======
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/cyclingclublite\n"
+"POT-Creation-Date: 2016-12-23 16:00+0100\n"
+>>>>>>> 66feca0959514c9567d90379d9825e907565d14c
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator:\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
+msgstr ""
+
+#: 404.php:30
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:47
+#. translators: %1$s: smiley
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:34
+#. translators: 1: title.
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:40
+#. translators: 2: title.
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:65
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:28
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:30
+#. translators: %s: CMS name, i.e. WordPress.
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:34
+msgid "https://cyclingclubpro.com/"
+msgstr ""
+
+#: footer.php:36
+#. translators: 1: site title.
+msgid "Theme: by $s"
+msgstr ""
+
+#: functions.php:49
+msgid "Primary"
+msgstr ""
+
+#: functions.php:50
+msgid "Primary"
+msgstr ""
+
+#: functions.php:113
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:115
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:123
+msgid "Footer"
+msgstr ""
+
+#: functions.php:125
+msgid "Add widgets here."
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:53
+msgid "Menu"
+msgstr ""
+
+#: inc/template-tags.php:29
+#. translators: post date
+msgid "post date"
+msgstr ""
+
+#: inc/template-tags.php:45
+#. translators: post author
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:62
+#. translators: used between list items, there is a space after the comma
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:65
+#. translators: 1: list of categories.
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:69
+#. translators: used between list items, there is a space after the comma
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:72
+#. translators: 1: list of tags.
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:82
+#. translators: %s: post title
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:99 template-parts/content-page.php:38
+#. translators: %s: Name of current post. Only visible to screen readers
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/template-functions.php:39
+msgid "Read more"
+msgstr ""
+
+#: search.php:21
+#. translators: %s: search query.
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:26
+#. translators: 1: link to WP admin new post page.
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:22 template-parts/content.php:45
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:40
+#. translators: %s: Name of current post. Only visible to screen readers
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content.php:51
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-child-page.php:35
+#. translators: %s: Name of current post. Only visible to screen readers.
+msgid "Edit <span class="screen-reader-text">%s</span>"
+msgstr ""
+
+#: template-parts/content-child-page.php:25
+msgid "Read more..."
+msgstr ""
+
+#: template-parts/content-front-page.php:25
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-front-page.php:38
+#. translators: %s: Name of current post. Only visible to screen readers.
+msgid "Edit <span class="screen-reader-text">%s</span>"
+msgstr ""
+
+#: template-parts/content-page.php:25
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:38
+#. translators: %s: Name of current post. Only visible to screen readers.
+msgid "Edit <span class="screen-reader-text">%s</span>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "cyclingclublite"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://cyclingclubpro.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A Cycling Club Website for Cycling Clubs"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Elliott Richmond"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://squareonemd.co.uk"
+msgstr ""

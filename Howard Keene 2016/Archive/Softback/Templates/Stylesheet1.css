@@ -1,0 +1,79 @@
+/* body and wrap - outer container for whole page */
+body,
+html {margin:0; padding:0;}
+body {min-width:800px; }
+#wrap {margin:15px auto; width:800px;}
+
+/* universal text styles */
+h1 {font-family:Arial, Helvetica, sans-serif; font-size:36pt; font-weight:bold; margin:0 0 5px 0; color:#000;}
+h2 {font-family:Arial, Helvetica, sans-serif; font-size:24pt; font-weight:bold; margin:0 0 5px 0; color:#000;}
+h3 {font-family:Arial, Helvetica, sans-serif; font-size:18pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+h4 {font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+h5 {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+h6 {font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+
+p {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#000000;}
+a {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; text-decoration:underline; margin:0 0 5px 0; text-decoration:underline; color:#660066;}
+a:focus, a:hover, a:active {text-decoration:none; color:#6600CC;}
+ul {margin:0 0 5px 1px;}
+li {list-style:none; padding-left:15px; background:url("../../Stylesheets/nedmc_final/bullet.gif") no-repeat 0 2px; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color: #660066;}
+
+/* image <img class="l" src="url" /> style classes */
+img {border:0;} /* border style for all images - no class = in-line image */
+img.l {float:left;} /* left-aligned images with text wrapping */
+img.r {float:right;} /* right-aligned images with text wrapping */
+img.b {display:block;} /* left-aligned image with no text wrap - nb: replaces <br /> tag */
+img.h {float:right; height:150px; width:200px; }
+
+
+/* header - top title bar */
+#header {}
+#header h1{ text-align:left; padding:10px 0 10px 0; margin:0; line-height:90px; color:#000;}
+/* logodiv1 - used to display logo */
+#logodiv1 {float:right; margin-left:25px; background:url("logo.gif") no-repeat; height:150px; width:200px;}
+
+#shelfdiv1 { float:left; padding:5px 0; width:800px; }
+#shelfdiv2 { float:left; padding:5px 0; width:800px; border-top:solid 1px;}
+#shelfdiv3 { float:left; padding:5px 0; width:800px; border-bottom:solid 1px;}
+#shelfdiv4 { float:left; padding:5px 0; width:800px; border-top:solid 1px; border-bottom:solid 1px;}
+
+/* menu - left vertical menu panel */
+#menu {float:left; padding:5px 0; width:150px; border-top:solid 2px; border-bottom:solid 2px;}
+#menu ul {margin:0; padding:0; list-style:none;}
+#menu li {background:none; margin:0; text-align:right; line-height:30px; padding-right:10px;}
+#menu a {font-weight:normal; font-size:18px; color:#ffcc33; text-decoration:none; padding-left:25px; line-height-25px;}
+#menu a:active, #menu a:focus, #menu a:hover {background:url("../../Stylesheets/nedmc_final/menu.gif") no-repeat; color:#ffff33;}
+
+/* Navbar - Horizontal menu panel */
+#Navbar { align:centre; padding:5px 0; background:#fff; width:800px; border-top:solid 0px; border-bottom:solid 0px;}
+#Navbar ul {margin:0; padding:0; list-style:none;}
+#Navbar li {display:inline; margin:0; padding:5px;}
+#Navbar a {font-weight:normal; font-size:18px; color:#ffcc33; text-decoration:none; padding-left:25px; line-height-25px;}
+#Navbar a:active, #menu a:focus, #menu a:hover {background:url("../../Stylesheets/nedmc_final/menu.gif") no-repeat; color:#ffff33;}
+
+/* style - style switcher panel */
+#style {display:block; float:right; width:70px;}
+#style ul {margin:0; padding:0; list-style:none;}
+#style li {background:none; margin:0; padding:0;}
+#style p {text-align:left; font-size:10px; font-weight:bold;}
+#style a {font-size:9px;}
+
+/* nav - DISABLED */
+#nav {display:none;}
+
+/* content - main content area */
+#content {float:right; padding:10px; width:600px; height:100%;  border:solid 3px;}
+#content {background:url("logo.gif") repeat;}
+#content ul {margin-bottom:0;}
+#content h3, #content h2, #content h1, #content p {padding:5px;}
+
+/*Box styles */
+#box { border-top:solid 1px; border-bottom:solid 1px; border-left: solid 1px; border-right: solid 1px;}
+
+
+/* footer */
+#footer {clear:both; text-align:right;}
+#footer {clear:both; margin-top:5px; border-top:1px solid #000;}
+#footer p, #footer a {margin-top:10px; font-size:9px; color:#ffffff;}
+#footer ul {margin:0; padding:0; list-style:none;}
+#footer li {display:inline; margin:0; padding:5px;}

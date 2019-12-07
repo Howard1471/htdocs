@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script language="javascript" src="../portfolio/jQuery/jquery-3.1.1.min.js"></script>
+<!-- TemplateBeginEditable name="config" -->
+<title>Portfolio Info Template</title>
+
+<!-- TemplateEndEditable -->
+ 
+
+
+</head>
+
+<body>
+<div class="header">
+<!-- TemplateBeginEditable name="header" -->
+header
+<!-- TemplateEndEditable -->
+</div>
+<div class="ribbon">
+<!-- TemplateBeginEditable name="ribbon" -->
+ribbon
+<!-- TemplateEndEditable -->
+</div>
+<div class="sidebarleft">
+<!-- TemplateBeginEditable name="sidebarleft" -->
+sidebarleft
+<!-- TemplateEndEditable -->
+</div>
+<div class = "maincontent">
+<!-- TemplateBeginEditable name="maincontent" -->
+maincontent
+<!-- TemplateEndEditable -->
+</div>
+<div class="sidebarright">
+<!-- TemplateBeginEditable name="sidebarright" -->
+sidebarright
+<!-- TemplateEndEditable -->
+</div>
+<div class = "footer">
+<!-- TemplateBeginEditable name="footer" -->
+footer
+<!-- TemplateEndEditable -->
+</div>
+<!-- TemplateBeginEditable name="JScode" -->
+JScode
+<!-- TemplateEndEditable -->
+</body>
+</html>

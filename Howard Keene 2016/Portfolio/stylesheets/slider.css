@@ -1,0 +1,50 @@
+
+body {width: 1240px; margin: 0 auto; background-color:#e5e2e2;
+		font-family:Arial, Helvetica, sans-serif; }
+
+h1 {color:#FFF;
+	
+	font-size:36px;
+	vertical-align:central;
+	padding: 50px 10px 10px 10px;
+	
+}	
+
+.header {background-image:url(../images/programmer_1240x350.jpg);
+			height:200px;
+			width:100%;
+			}
+.ribbon { height:50px; }
+.ribbon a { color: #000;
+			font-size:36px; }
+
+
+
+/********** SLIDER **********/
+
+.slider { width: 940px; float:left;}
+.slide-viewer { position: relative; overflow: hidden;  height:430px; width:940px; border: 2px; border-style:solid; }
+.slide-group { width: 100%; height: 100%; position: relative;} /* */
+.slide { width: 100%; height: 100%; display: none; position: absolute;}
+.slide:first-child { display: block;}
+/********** BUTTONS **********/
+.slide-buttons { text-align: center; display:inline}
+.slide-btn {
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 200%;
+  line-height: 0.5em;
+  display: inline-block;
+  text-align:center;
+   
+   }
+.slide-btn.active, .slide-btn:hover {
+  color: #ed8e6c;
+  cursor: pointer;}
+.slide-wrapper { max-width:1040px;  margin: 0 auto; }
+#LeftButton { background-image:url(../images/leftbutton.jpg);width:50px; height:430px; float:left; } 
+#RightButton { background-image:url(../images/rightbutton.jpg); width:50px; height:430px; float:left; }
+
+img { height:442px; width:940px;}
+  

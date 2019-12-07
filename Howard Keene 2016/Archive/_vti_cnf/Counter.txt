@@ -1,0 +1,12 @@
+vti_encoding:SR|utf8-nl
+vti_author:SR|ADVENT_8111\\Howard
+vti_modifiedby:SR|ADVENT_8111\\Howard
+vti_timelastmodified:TR|28 Feb 2009 15:04:49 -0000
+vti_timecreated:TR|28 Feb 2009 15:04:03 -0000
+vti_extenderversion:SR|6.0.2.8161
+vti_backlinkinfo:VX|
+vti_nexttolasttimemodified:TR|28 Feb 2009 15:04:03 -0000
+vti_cacheddtm:TX|28 Feb 2009 15:04:49 -0000
+vti_filesize:IR|4
+vti_syncofs_howardkeene.co.uk\:21/howardkeene.co.uk:TW|28 Feb 2009 15:07:00 -0000
+vti_syncwith_howardkeene.co.uk\:21/howardkeene.co.uk:TW|28 Feb 2009 15:04:49 -0000

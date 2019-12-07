@@ -1,0 +1,9 @@
+Format of data within the Reportlist.dat file
+
+Reference 	: ATTNNN,
+Title 		: Ace Riders 2010 Announcement,
+Subtitle	: Riders for 2010 announced at Sheffield World Indoor Competition,
+Text Filename	: Riders2010 announcement.txt,
+Image Title	: Adam Raga on Ace TTC World Section,
+Image Filename	: Raga_FIM_IWTC_R01_a01.jpg,
+Upload Date	: 14.01.10

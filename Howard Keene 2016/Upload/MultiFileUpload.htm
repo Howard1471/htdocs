@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+         "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="../Archive/Stylesheets/ATT2010.css" type="text/css" media="screen">
+<!-- <link rel="shortcut icon" href="/favicon.ico"/> -->
+<title>All-in-one Upload</title>
+</head>
+<body class = "Upload">
+<h2>Upload Report</h2>
+<h1>Complete the fields below, using the browse buttons to find the files</h1>
+<form action="AllInOneupload.php" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="MAX_FILE_SIZE" value="6291456" > <!-- 6Mb -->
+Headline<br><Input type=text  name="headline" size="80">
+<br>Subtitle<br><Input type=text  name="subtitle" size="80">
+<br>Report text filename:<br><Input type="file" name="userfile" size="80">
+<br>Photo filename:<br><Input type="file" name="imagefile" size="80">
+<br>Photo Title<br><Input type=text  name="phototitle" size="80">
+<br><br>
+<input type="submit" value = "Upload Files" ><br>
+</form>
+
+
+</body>
+ 
+</html>

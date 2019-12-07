@@ -1,0 +1,219 @@
+/* Info page Stylesheet */
+
+
+body.Services
+{
+background-color: #FFD1E7;
+}
+
+/* Normal text, no padding etc. Black text, no background */
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	padding: 0em;
+	margin: 0em;
+}
+p.small
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	color: #000;
+	padding: 0em;
+	margin: 0em;
+}
+p.Highlite
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #fff;
+	background-color: #000;
+	padding: 0em;
+	margin: 0em;
+}
+
+p.TableText
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 0em;
+	margin: 0em;
+}
+
+h1 /* Heading 1 - Main Text Heading 48px */
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 72px;
+	color: #000000;
+	/*font-style: italic;*/
+	/*background-color: #CCCCCC;*/
+	/*letter-spacing: 2px;*/
+	padding-top: 1px;
+	padding-bottom: 1px;
+	/*padding-left: 8px;*/
+	/*background-image: url(images/navfold.gif);*/
+	/*background-repeat: no-repeat;*/
+	/*border-bottom-width: 1px;*/
+	/*border-bottom-style: solid;*/
+	/*border-bottom-color: #000000;*/
+	/*width: 50%;*/
+}
+
+h2 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 48px;
+	color: #000000;
+	/*font-style: italic;*/
+	/*background-color: #CCCCCC;*/
+	/*letter-spacing: 2px;*/
+	padding-top: 1px;
+	padding-bottom: 1px;
+	/*padding-left: 8px;*/
+	/*background-image: url(images/navfold.gif);*/
+	/*background-repeat: no-repeat;*/
+	/*border-bottom-width: 1px;*/
+	/*border-bottom-style: solid;*/
+	/*border-bottom-color: #000000;*/
+	/*width: 50%;*/
+}
+
+h3 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: #000000;
+	/*font-style: italic;*/
+	/*background-color: #CCCCCC;*/
+	/*letter-spacing: 2px;*/
+	padding-top: 1px;
+	padding-bottom: 1px;
+	/*padding-left: 8px;*/
+	/*background-image: url(images/navfold.gif);*/
+	/*background-repeat: no-repeat;*/
+	/*border-bottom-width: 1px;*/
+	/*border-bottom-style: solid;*/
+	/*border-bottom-color: #000000;*/
+	/*width: 50%;*/
+}
+
+h4
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #000000;
+	/*font-style: italic;*/
+	/*background-color: #CCCCCC;*/
+	/*letter-spacing: 2px;*/
+	padding-top: 1px;
+	padding-bottom: 1px;
+	/*padding-left: 8px;*/
+	/*background-image: url(images/navfold.gif);*/
+	/*background-repeat: no-repeat;*/
+	/*border-bottom-width: 1px;*/
+	/*border-bottom-style: solid;*/
+	/*border-bottom-color: #000000;*/
+	/*width: 50%;*/
+}
+
+h5
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	/*font-style: italic;*/
+	/*background-color: #CCCCCC;*/
+	/*letter-spacing: 2px;*/
+	padding-top: 1px;
+	padding-bottom: 1px;
+	/*padding-left: 8px;*/
+	/*background-image: url(images/navfold.gif);*/
+	/*background-repeat: no-repeat;*/
+	/*border-bottom-width: 1px;*/
+	/*border-bottom-style: solid;*/
+	/*border-bottom-color: #000000;*/
+	/*width: 50%;*/
+}
+
+h6
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	/*font-style: italic;*/
+	/*background-color: #CCCCCC;*/
+	/*letter-spacing: 2px;*/
+	padding-top: 1px;
+	padding-bottom: 0px;
+	line-height = 0px;
+	/*padding-left: 8px;*/
+	/*background-image: url(images/navfold.gif);*/
+	/*background-repeat: no-repeat;*/
+	/*border-bottom-width: 1px;*/
+	/*border-bottom-style: solid;*/
+	/*border-bottom-color: #000000;*/
+	/*width: 50%;*/
+}
+
+
+
+/* Lists */
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+
+
+/* Hyperlink Styles */
+a.navigation
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	display: block;
+	color: #FFf; /* ff0 = Yellow */
+	background-color: #00f; /* 00f = Blue */
+	padding: 10px;
+	/*margin: 10px;*/
+	width: 100px;
+	text-decoration: none;
+	
+}
+a.navigation:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	display: block;
+	color: #00f;
+	background-color: #Ff0;
+	text-decoration: none;
+	width: 100px;
+	padding: 10px;
+	/*margin: 10px;*/
+}
+a.NavStyle1
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	display: block;
+	color: #FFf; /* ff0 = Yellow */
+	background-color: #00f; /* 00f = Blue */
+	padding: 5px;
+	/*margin: 10px;*/
+	width: 100px;
+	text-decoration: none;
+	
+}
+a.NavStyle1:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	display: block;
+	color: #00f;
+	background-color: #Ff0;
+	text-decoration: none;
+	width: 100px;
+	padding: 5px;
+	/*margin: 10px;*/
+}

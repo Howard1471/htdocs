@@ -1,0 +1,214 @@
+/* CSS Document for NTU workspace Assignment */
+
+/*************************************************************************/
+@media screen and (min-width: 701px)  {
+/* Desktop Landscape layout */
+	
+/* fixed width container surrounds the other divs */
+.container {
+	width: 1000px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* Due to variations between browsers, it's best practices to zero padding and margin on lists. Initial set up done here */	
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+/* Setup basic parameters for basic text types */
+/* Note that "header" text ie. h1 is bold by default */
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+
+}
+
+a img { border: none; }
+
+/* General hyperlink styling */1
+a:link {
+	color: #00F;
+	text-decoration: underline; 
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+/* General list styling */
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #C6D580; 
+	margin-bottom: 15px; 
+}
+ul.nav li {
+	border-bottom: 1px solid #C6D580; 
+}
+ul.nav a, ul.nav a:visited { 
+	padding: 5px 5px 5px 15px;
+	display: block;
+	width: 160px;  
+	text-decoration: none;
+	background-color: #C6D580;
+}
+/* was #C6D580 */
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background-color: #ADB96E;
+	color: #FFF;
+}
+
+
+/****************************************************************************************************/
+/* Header Div styling */
+.header {
+	background-color: #F00;
+	width: 100%;
+	height: 240px;
+	/*background-image:url(../images/Bookstore_header2016.jpg);*/ 
+	}
+/* Variations from standard, used in Header only */
+.header h1 { color:#FFF; float: right; }
+.header p  { color:#FFF; float: right; }
+
+.Ribbon {background-color:#0F0;
+			height: 50px;
+			width: 100%;
+			}
+
+.sidebar1 {
+	float: left;
+	width: 25%;
+	height: 600px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+.sidebar1 img {padding-left:10px; }
+.sidebar1 p { margin-top: 0; padding-right: 15px; padding-left: 15px; }
+.sidebar1 a { text-decoration:underline;  margin-top: 0; padding-right: 15px; padding-left: 15px;}
+
+/* Content Area CSS*/
+.content {
+	padding: 10px 0;
+	width: 75%;
+	height: 590px;
+	float: left;
+	background-color: #9adef5;
+	border-width: 0px;
+}
+/* Lists in the .content area only - unordered and ordered just in case either are used.*/
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; 
+}
+
+/*******************************************************************************************/
+
+/* The footer */
+.footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+}
+/*************************************************************************/
+@media screen and (min-width: 301px) and (max-width: 700px)  {
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+/* fixed width container surrounds the other divs */
+.container {
+	width: 100%;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* Header Div styling */
+.header {
+	background-color: #00F;
+	width: 100%;
+	height: 240px;
+	/*background-image:url(../images/Bookstore_header2016.jpg) ;*/
+}
+/* Variations from standard, used in Header only */
+.header h1 { color:#FFF; float: right; }
+.header p  { color:#FFF; float: right; }
+
+.Ribbon {background-color:#0F0;
+			height: 50px;
+			width: 100%;
+			}
+/* Content Area CSS*/
+.content {
+	padding: 10px 0;
+	width: 100%;
+	height: 590px;
+	float: left;
+	background-color: #9adef5;
+	border-width: 0px;
+}
+.sidebar1 {
+	float:none;
+	width: 25%;
+	height: 600px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+.sidebar1 img {padding-left:10px; }
+.sidebar1 p { margin-top: 0; padding-right: 15px; padding-left: 15px; }
+.sidebar1 a { text-decoration:underline;  margin-top: 0; padding-right: 15px; padding-left: 15px;}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*************************************************************************/
+@media screen and (max-width: 300px) {
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+/* fixed width container surrounds the other divs */
+.container {
+	width: 100%;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* Header Div styling */
+.header {
+	background-color: #0F0;
+	width: 100%;
+	height: 240px;
+	/*background-image:url(../images/Bookstore_header2016.jpg) ;*/
+}
+
+
+
+}

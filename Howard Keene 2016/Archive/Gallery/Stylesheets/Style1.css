@@ -1,0 +1,21 @@
+/*
+Howardkeene.co.uk 2014 Gallery Stylesheet
+
+/* Pink background = #FEDCF5 */
+/* Red highlite = #853152 */
+/* Leaflet text = #606290 */
+
+/* body and wrap - outer container for whole page */
+body, html {margin:0; padding:0;}
+body {min-width:800px; background-color: #FFFFFF;}
+#wrap {margin:2px auto; width:800px; background-color:#FFF ; border: thin; border-color:#000; }
+
+/* universal text styles */
+h1 {font-family:Arial, Helvetica, sans-serif; font-size:36pt; font-weight:bold; margin:0 0 5px 0; color:#000;}
+h2 {font-family:Arial, Helvetica, sans-serif; font-size:24pt; font-weight:normal; margin:0 0 5px 0; color:#000;}
+h3 {font-family:Arial, Helvetica, sans-serif; font-size:18pt; font-weight:normal; margin:0 0 5px 0; color:#000;}
+h4 {font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:normal; margin:0 0 5px 0; color:#000;}
+h5 {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#000;}
+h6 {font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal; margin:0 0 5px 0; color:#000;}
+
+p {font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal; margin:0 0 0 10px; color:#000;}

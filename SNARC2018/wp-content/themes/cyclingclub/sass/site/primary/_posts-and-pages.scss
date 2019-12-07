@@ -1,0 +1,62 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em 0;
+	@include mobile {
+		margin: 0;
+	}
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.entry-header {
+}
+
+.page-content,
+.entry-content,
+.entry-summary, .entry-footer {
+	margin: 1.5em auto 0 auto;
+}
+
+.entry-meta {
+    position: relative;
+    padding-bottom: 1em;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+.cat-links {
+    display: block;
+    font-weight:  100;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.tags-links {
+    display: block;
+    font-weight: 100;
+}
+
+a.post-edit-link {
+    padding: 3px 15px;
+    margin: 20px 0px;
+    color: #fff;
+}
+
+.edit-link {
+    margin: 15px 0px;
+    line-height: 5;
+    a {
+	    border-radius: 3px;
+	    background: $color__primary-accent;
+    }
+}

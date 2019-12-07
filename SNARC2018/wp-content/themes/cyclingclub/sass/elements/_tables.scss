@@ -1,0 +1,20 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	thead {
+	    background: $color__primary-dark;
+	    padding: 10px;
+	    color: #fff;
+	}
+	
+	tbody tr:nth-child(even) {
+	    background: $color__secondary-pale;
+		border-bottom: 1px solid rgba(3, 169, 244, 0.2);
+    }
+	
+	tbody tr:nth-child(odd) {
+	    background: #FFF;
+		border-bottom: 1px solid rgba(3, 169, 244, 0.2);
+	}
+}
+

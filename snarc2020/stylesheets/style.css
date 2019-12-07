@@ -1,0 +1,115 @@
+/* CSS Document */
+
+
+body {
+	background-color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.wrapper{
+	margin: 0 auto;
+	max-width:1000px;
+	height: 1100px;
+	border: dotted 1px #111;
+}
+
+/*********************** Titleblock **************************/
+.titleblock{
+	max-width:1000px;
+	height: 530px;
+	border:solid 0px #000000;
+}
+.titleheader {
+	width: 980px;
+	height: 125px;
+	border:solid 0px #000000;
+}
+.titleheader h1 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	margin-left: 50px;
+	color:#009;
+}
+.titleheader h2 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	margin-left: 50px;
+}
+.titleheader h3 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	margin-left: 50px;
+	color:#666;	
+}
+.imageheader{
+	width: 1000px;
+	height: 313px;
+	background-image:url(../images/Website_Header_1000x313.jpg);
+}
+.menubar{
+	width: 950px;
+	height: 50px;
+	background-color:#000;
+	padding-left: 50px;
+}
+.menubar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+.menubar li {
+	display:inline;
+	color:#FFF;
+	border-right:solid 1px #FFF;
+	border-left:solid 1px #FFF;
+	float: left;
+}
+.menubar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.menubar li a:hover {
+  background-color:#333;
+} 
+
+/********************** main content *************************/
+
+.maincontent{
+	width: 998px;
+	height: 500px;
+	border:solid 0px #000000;
+	background-color:#09F;
+}
+
+.leftsidebar{
+	width:200px;
+	background-color:#0F9;
+	height: 100%;
+	display:inline;
+	float:left;
+	
+}
+.rightsidebar{
+	width:200px;
+	background-color:#FC0;
+	height: 100%;
+	display:inline;
+	float:left;
+
+}
+.contentpanel{
+	width:598px;
+	height: 100%;
+	display:inline;
+	float:left;
+	
+}
+.footerpanel{
+	width: 998px;
+	height: 500px;
+	border:solid 0px #000000;
+	background-color:#09F;
+}

@@ -1,0 +1,89 @@
+/*
+Howardkeene.co.uk 2016 Stylesheet
+
+/*
+Wordpress colours
+
+Pale Blue  #6495ed
+Green #24890d
+
+fonts 
+entry-title:  26px, 
+Ribbon 18px weight strong
+ 
+*/
+
+/* body and wrap - outer container for whole page */
+body {margin:0 auto; padding:0;}
+body {max-width:1260px; background-color: #FFFFFF;}
+
+.wrap { max-width:1260px; background-color:#FFF ; border: thin; border-color:#000;}
+
+#contact { color:#009; }
+
+/* universal text styles */
+h1 {font-family:Arial, Helvetica, sans-serif; font-size:36pt; font-weight:bold; margin:0 0 5px 0; color:#FFFFFF;}
+h2 {font-family:Arial, Helvetica, sans-serif; font-size:24pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h3 {font-family:Arial, Helvetica, sans-serif; font-size:18pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h4 {font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h5 {font-family:Arial, Helvetica, sans-serif; font-size:12pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+h6 {font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:normal; margin:0 0 5px 0; color:#FFFFFF;}
+
+/* header - top title bar */
+.header { align:left; 
+			width:100%px;height:204px; 
+			background-image:url(../images/Header_1260x204.jpg);
+			}
+			
+.Ribbon { background-color: #6495ed; 
+			width: 100%; height: 50px;
+			color: #FFFFFF;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:26px;
+		}
+.Ribbon h3 { font-weight:bold; text-decoration:underline; padding-left: 20px; padding-top: 10px; }
+
+.Sidebar1 { background-color: #6495ed;
+			min-height:500px;
+			width:20%; height:auto;
+			min-width:10%;
+			color:#FFFFFF;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:18px;
+			float:left;
+		}
+.Sidebar1 a { padding-left: 20px;
+				padding-top: 20px;
+				padding-bottom: 10px;
+				color:#FFF;
+				text-decoration:none;
+				display:block;
+		}
+.Sidebar1 a:hover {  
+				background-color: #1553c4;}
+
+/* content - main content area height:800px;*/
+.content { min-height:400px;
+			width:80%;
+			background-color:#FFF; 	
+			font-color: #000000;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:18px;
+			float:right;
+			}
+.content h1,h2,h3,h4,h5,h6,p { padding-left:40px; padding-top:10px; padding-right:40px; color:#000;}			
+.content h1 { font-weight:lighter; color:#333 }
+.content a { padding-left:40px;}
+			
+/* footer */
+.footer { width: 100%; height:50px;
+			background-color:#000;
+			color:#FFF;
+			text-align:center; 
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:12px;
+			padding-top: 10px; 
+			float:left;
+			}
+
+

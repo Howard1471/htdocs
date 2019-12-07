@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Howies F1 League</title>
+
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../fantasyf1/Stylesheets/Style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<div align="center"
+<body>
+<table width="1000" height="489" border="1" cellspacing="0" cellpadding="0">
+  <tr height="100">
+    <th height="100" colspan="2">
+	<!-- TemplateBeginEditable name="HeaderPanel" -->HeaderPanel<!-- TemplateEndEditable -->
+   </th>
+  </tr>
+  <tr height="697">
+    <th  width="150">
+	<!-- TemplateBeginEditable name="SideMenu" -->SideMenu<!-- TemplateEndEditable -->
+    </th>
+    <td>
+	<!-- TemplateBeginEditable name="MainFrame" -->MainFrame<!-- TemplateEndEditable -->
+    
+    </td>
+  </tr>
+</table>
+
+</body>
+</div>
+</html>
