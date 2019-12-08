@@ -1,11 +1,9 @@
-
-
 <?php 
-include "../core/header.php";
-include "../core/Constants.php";
+include "../../core/header.php";
+include "../../core/Constants.php";
 ?>
 
-<title>Awards Registration</title>
+<title>Login/Registration</title>
 </head>
 <body>
 <div class="container-fluid container_restrict">
