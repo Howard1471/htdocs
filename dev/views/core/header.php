@@ -1,12 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" 
-    integrity="sha256-rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm+224CacZs=" 
-    crossorigin="anonymous">
-<link rel="stylesheet" href="../stylesheets/awards.css" >
+<?php include "meta.php"; ?>
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-lg-12 posRel">
+            <img class="headerImage" src="../images/Website_Header_1000x313.jpg"/>
+            <div class="post-content">
+                <h1>South Notts Amateur Radio Club</h1>
+                <h3>Affiliated to The Radio Society of Great Britain</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 col-lg-3 bg_black"></div>
+        <div class="col-md-6 col-lg-6 bg_black">
+            <div class="menubar">
+                <ul>
+                <li><a href="<?php echo ROOT; ?>/index.php">Home</a></li>
+                <li><a href="<?php echo ROOT; ?>/views/about/about.php">About</a></li>
+                <li><a href="<?php echo ROOT; ?>/views/news/news.php">News</a></li>
+                <li><a href="<?php echo ROOT; ?>/views/diary/diary.php">Diary</a></li>
+                <li><a href="<?php echo ROOT; ?>/views/articles/articles.php">Articles</a></li>
+                <li><a href="<?php echo ROOT; ?>/views/technical/technical.php">Technical</a></li>
+                <li><a href="<?php echo ROOT; ?>/views/contact/contact.php">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 bg_black"></div>
+    </div>
+
+
+
+    
+            
+   

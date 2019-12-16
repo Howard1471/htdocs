@@ -1,0 +1,15 @@
+.footerboxes{
+
+    background-color: darkslategray;
+    color: #fff;
+    Padding:10px;
+
+}
+.footerboxes h1{
+    font-size: 10px;
+    font-weight: bold;
+}
+.footerboxes p{
+    font-size: 8px;
+    font-weight: normal;
+}

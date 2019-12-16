@@ -1,0 +1,98 @@
+/* CSS Document */
+
+
+body {
+	background-color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+
+/*********************** Titleblock **************************/
+.titleblock{
+	max-width:1000px;
+	height: 530px;
+	border:solid 0px #000000;
+}
+.titleheader {
+	width: 980px;
+	height: 125px;
+	border:solid 0px #000000;
+}
+.titleheader h1 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	margin-left: 50px;
+	color:#009;
+}
+.titleheader h2 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	margin-left: 50px;
+}
+.titleheader h3 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	margin-left: 50px;
+	color:#666;	
+}
+/***************************************************************/
+.menubar{
+	height: 50px;
+	background-color:#000;
+}
+.menubar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+.menubar li {
+	display:inline;
+	color:#FFF;
+	border-right:solid 1px #FFF;
+	border-left:solid 1px #FFF;
+	float: left;
+}
+.menubar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.menubar li a:hover {
+  background-color:#333;
+} 
+.boxystuff{
+	 border: solid 1px #000;
+}
+.horizAlign{
+	text-align: center;
+}
+.bg_black{
+	background-color: #000;
+}
+.full_width{
+	width: 100%;
+}
+.headerImage{
+	width:100%;
+	height: 400px;
+	padding: 0;
+	margin: 0;
+}
+.headerIcon{
+	height: 100px;
+}
+.posRel{
+	position:relative;
+}
+.post-content{
+	top:10%;
+	left:50%;
+	position:absolute;
+	color: #FFF;
+}
+
+
+
