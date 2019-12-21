@@ -1,6 +1,6 @@
 <?php 
 include "../../core/Constants.php";
-include "../core/header.php";
+include "../core/semi-header.php";
 ?>
 
     <div class="col-md-12" style = "height:20px;"></div>

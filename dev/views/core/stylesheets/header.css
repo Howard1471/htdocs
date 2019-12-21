@@ -2,8 +2,6 @@
 
 
 body {
-	background-color:#FFF;
-	font-family:Verdana, Geneva, sans-serif;
 }
 
 
@@ -93,6 +91,10 @@ body {
 	position:absolute;
 	color: #FFF;
 }
-
+.semiheader{
+	background-color: darkslategray;
+	color: #fff;
+	Padding:10px;
+}
 
 

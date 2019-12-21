@@ -1,0 +1,9 @@
+
+
+
+.viewpanel {
+    border: solid 3px #999999;
+    border-radius:10px;
+    text-align:center;
+    padding: 5px;
+}

@@ -23,14 +23,7 @@
         <div class="col-md-6 col-lg-6 bg_black">
             <div class="menubar">
                 <ul>
-                <li><a href="<?php echo ROOT; ?>/index.php">Home</a></li>
-                <li><a href="<?php echo ROOT; ?>/views/about/about.php">About</a></li>
-                <li><a href="<?php echo ROOT; ?>/views/news/news.php">News</a></li>
-                <li><a href="<?php echo ROOT; ?>/views/diary/diary.php">Diary</a></li>
-                <li><a href="<?php echo ROOT; ?>/views/articles/articles.php">Articles</a></li>
-                <li><a href="<?php echo ROOT; ?>/views/technical/technical.php">Technical</a></li>
-                <li><a href="<?php echo ROOT; ?>/views/contact/contact.php">Contact</a></li>
-                <li><a href="#">Login</a></li>
+                    <?php include "../core/menuService.php"; ?>
                 </ul>
             </div>
         </div>
