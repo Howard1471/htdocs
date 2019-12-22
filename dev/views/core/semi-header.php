@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
 
-<?php include "meta.php"; ?>
+<?php
+include "../../core/Constants.php";
+include "meta.php";
+include "Menuing.php";
+
+$menu = new Menuing();
+?>
 
 </head>
 <body>
@@ -26,8 +32,26 @@
     <div class="row">
         <div class="col-md-3 col-lg-3 bg_black"></div>
         <div class="col-md-6 col-lg-6 bg_black">
-<?php include "../core/menuService.php"; ?>
+            <div class="menubar">
+            <?php
 
+            if( $_SESSION['user'] == 'user'){
+                $menuContent = $menu->getMainMenu();
+                $menuURLs = $menu->getMainURLs();
+            } else {
+                $menuContent = $menu->getAdminMenuArray();
+                $menuURLs = $menu->getAdminURLs();
+            }
+            $menuEntries = count($menuContent);
+            echo"<ul>";
+            for( $i = 0; $i < $menuEntries ; $i++ ){
+                echo "<li><a href='".ROOT."/".$menuURLs[$i]."'>".$menuContent[$i]."</a></li>";
+            }
+            echo"</ul>";
+
+            //include "../core/menuService.php";
+            ?>
+            </div>
         </div>
         <div class="col-md-3 col-lg-3 bg_black"></div>
     </div>

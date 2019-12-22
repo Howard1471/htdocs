@@ -1,5 +1,4 @@
 <?php 
-include "../../core/Constants.php";
 include "../core/semi-header.php";
 
 /**

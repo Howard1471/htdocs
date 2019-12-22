@@ -6,11 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" 
-    integrity="sha256-rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm+224CacZs=" 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous">
 <link rel="stylesheet" href="../../stylesheets/awards.css" >
 
 <link rel="stylesheet" href="../core/stylesheets/style.css" >
 <link rel="stylesheet" href="../core/stylesheets/header.css" >
 <link rel="stylesheet" href="../core/stylesheets/footer.css" >
+
+

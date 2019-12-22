@@ -1,6 +1,6 @@
-<?php 
-include "../../core/Constants.php";
+<?php
 include "../core/header.php";
+$_SESSION['user'] = "user";
 
 /**
  * This is the opening page, presenting a welcome and a brief note about the club
