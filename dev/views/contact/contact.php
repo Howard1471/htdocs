@@ -9,9 +9,14 @@ include "../core/semi-header.php";
 <div class = "row"><div class = "col-md-12 col-lg-12 spacer20"></div></div>
 <div class="row">
 
-    <div class="col-md-2 col-lg-2"></div>
-    <div class="col-md-5 col-lg-5">
+    <div class="col-md-2 col-lg-2 viewpanel">
         <h1>Contact Form</h1>
+        <p>Please use this form to contact the club with any enquiries. We will endeavour to return to you as soon as we are able.</p>
+
+
+    </div>
+    <div class="col-md-5 col-lg-5 viewpanel">
+
 
         <div class="col-md-12 contactform">
             <form id="contactForm" >
@@ -36,8 +41,8 @@ include "../core/semi-header.php";
         </div>
     </div>
 
-    <div class="col-md-5 col-lg-5">
-    <p>Please use this form to contact the club with any enquiries. We will endeavour to return to you as soon as we are able.</p>
+    <div class="col-md-5 col-lg-5 viewpanel">
+
     </div>
 
 </div>
