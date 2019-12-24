@@ -14,7 +14,6 @@ class Menuing
         'News',
         'Diary',
         'Articles',
-        'Technical',
         'Contact',
 
         ];
@@ -25,7 +24,6 @@ class Menuing
         'views/news/news.php',
         'views/diary/diary.php',
         'views/articles/articles.php',
-        'views/technical/technical.php',
         'views/contact/contact.php',
         'views/login/login_start.php',
 

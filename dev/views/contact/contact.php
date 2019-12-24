@@ -12,6 +12,7 @@ include "../core/semi-header.php";
     <div class="col-md-2 col-lg-2">
         <h1>Contact Form</h1>
         <p>Please use this form to contact the club with any enquiries. We will endeavour to return to you as soon as we are able.</p>
+        <p>Secretary</p>
     </div>
     <div class="col-md-8 col-lg-8">
 
@@ -36,13 +37,17 @@ include "../core/semi-header.php";
                         <div class="col-md-10 col-lg-10"><textarea rows="5" cols="80" id="contactMessage" placeholder="Enter your enquiry here"></textarea></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 col-lg-2"><p>Message</p></div>
-                        <div class="col-md-10 col-lg-10"><textarea rows="5" cols="80" id="contactMessage" placeholder="put the buttons here"></textarea></div>
+                        <div class="col-md-6 col-lg-6 text-center">
+
+                        </div>
+                        <div class="col-md-6 col-lg-6 text-center">
+                            <input type="button" id="sendBtn" value="Send" class="btn-send-email"/>
+                        </div>
                     </div>
 
 
                 </div>
-                <div class="col-md-4 viewpanel"></div>
+                <div class="col-md-4"></div>
             </div>
         </form>
 

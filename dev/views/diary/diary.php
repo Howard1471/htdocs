@@ -9,8 +9,8 @@ include "../core/semi-header.php";
 
 <div class="row">
 
-    <div class="col-md-2 col-lg-2"></div>
-    <div class="col-md-8 col-lg-8 viewpanel">
+    <div class="col-sm-0 col-md-0 col-lg-2"></div>
+    <div class="col-sm-12 col-md-12 col-lg-8 viewpanel">
         <h1>Events Diary</h1>
         <div class="row">
             <div class="col-md-3 col-lg-3"></div>
@@ -140,16 +140,10 @@ include "../core/semi-header.php";
 
             </div>
             <div class="col-md-3 col-lg-3"></div>
-
-
-
-
-
-
         </div>
 
-
-        <div class="col-md-2 col-lg-2"></div>
+    </div>
+    <div class="col-sm-0 col-md-0 col-lg-2"></div>
 
 </div>
 

@@ -2,6 +2,7 @@
 
 
 body {
+	min-width: 480px;
 }
 
 
@@ -33,7 +34,8 @@ body {
 	margin-left: 50px;
 	color:#666;	
 }
-/***************************************************************/
+/******* menubar button styling ********************************/
+
 .menubar{
 	height: 50px;
 	background-color:#000;
@@ -50,6 +52,7 @@ body {
 	border-right:solid 1px #FFF;
 	border-left:solid 1px #FFF;
 	float: left;
+	width: 96px;
 }
 .menubar li a {
   display: block;
@@ -60,7 +63,8 @@ body {
 }
 .menubar li a:hover {
   background-color:#333;
-} 
+}
+/********************************************************************/
 .boxystuff{
 	 border: solid 1px #000;
 }
