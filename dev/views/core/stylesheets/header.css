@@ -1,9 +1,7 @@
 /* CSS Document */
 
 
-body {
-	min-width: 480px;
-}
+
 
 
 /*********************** Titleblock **************************/
@@ -52,7 +50,7 @@ body {
 	border-right:solid 1px #FFF;
 	border-left:solid 1px #FFF;
 	float: left;
-	width: 96px;
+	width: 100px;
 }
 .menubar li a {
   display: block;

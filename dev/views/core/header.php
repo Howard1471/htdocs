@@ -7,6 +7,8 @@ include "../../core/Constants.php";
 if (!isset($_SESSION['user'])) {
     header("Location:".ROOT_INDEX);
 }
+$menuType = $_SESSION['menutype'];
+
 include "meta.php";
 include "Menuing.php";
 
@@ -37,13 +39,14 @@ $menu = new Menuing();
 
                         <?php
 
-                        if( $_SESSION['user'] == 'user'){
+                        if( $menuType == 'long'){
                             $menuContent = $menu->getMainMenu();
                             $menuURLs = $menu->getMainURLs();
                         } else {
-                            $menuContent = $menu->getAdminMenuArray();
-                            $menuURLs = $menu->getAdminURLs();
+                            $menuContent = $menu->getShortMenu();
+                            $menuURLs = $menu->getShortURLs();
                         }
+                        
                         $menuEntries = count($menuContent);
                         echo"<ul>";
                         for( $i = 0; $i < $menuEntries ; $i++ ){
@@ -59,9 +62,3 @@ $menu = new Menuing();
             <div class="col-md-3 col-lg-3 bg_black"></div>
 
     </div>
-
-
-
-    
-            
-   

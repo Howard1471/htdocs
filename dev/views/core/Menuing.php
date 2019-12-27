@@ -38,6 +38,27 @@ class Menuing
         return $this->mainURLs;
     }
 
+    protected $shortMenuArray = [
+        'Home',
+        'About',
+        'Diary',
+        'Contact',
+        ];
+    protected $shortURLs = [
+        'index.php',
+        'views/about/about.php',
+        'views/diary/diary.php',
+        'views/contact/contact.php',
+    ];
+    public function getShortMenu()
+    {
+        return $this->shortMenuArray;
+    }
+    public function getShortURLs()
+    {
+        return $this->shortURLs;
+    }
+
 
     protected $adminMenuArray = [
         'Home',

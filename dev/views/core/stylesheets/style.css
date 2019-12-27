@@ -1,4 +1,7 @@
 
+body {
+	min-width: 480px;
+}
 
 .container_restrict{
     min-width:576px;
@@ -72,4 +75,7 @@ diary_day_host{
     background-color: #1e7e34;
     border: solid 3px #999999;
     border-radius: 10px;
+}
+.width100{
+    width: 100%;
 }

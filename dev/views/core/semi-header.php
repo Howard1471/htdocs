@@ -7,17 +7,16 @@ include "../../core/Constants.php";
 if (!isset($_SESSION['user'])) {
     header("Location:".ROOT_INDEX);
 }
+$menuType = $_SESSION['menutype'];
 
 include "meta.php";
 include "Menuing.php";
-
-
 
 $menu = new Menuing();
 ?>
 
 </head>
-<body class = "container_restrict">
+<body >
 
 
 
@@ -42,12 +41,12 @@ $menu = new Menuing();
                 <div class="menubar">
                 <?php
 
-                if( $_SESSION['user'] == 'user'){
+                if( $menuType == 'long'){
                     $menuContent = $menu->getMainMenu();
                     $menuURLs = $menu->getMainURLs();
                 } else {
-                    $menuContent = $menu->getAdminMenuArray();
-                    $menuURLs = $menu->getAdminURLs();
+                    $menuContent = $menu->getShortMenu();
+                    $menuURLs = $menu->getShortURLs();
                 }
                 $menuEntries = count($menuContent);
                 echo"<ul>";
