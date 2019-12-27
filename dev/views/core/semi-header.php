@@ -17,21 +17,28 @@ $menu = new Menuing();
 
 </head>
 <body >
+<div class="row footerboxes">
 
+<?php
+if( $menuType == 'long'){
+    echo "<div class = 'col-md-2 col-lg-2'><img src='";
+    echo LOGO;
+    echo "' class='imagecenter' ></div>";
 
+}
+?>
 
-        <div class="row footerboxes">
-            <div class = "col-md-2 col-lg-2 align-content-center">
-                <img src="<?php echo LOGO; ?>">
-            </div>
-            <div class="col-md-8 col-lg-8 align-content-center" >
+<!--            <div class = "col-xs-0 col-sm-0 col-md-0 col-lg-2 ">-->
+<!--                <img src="--><?php //echo LOGO; ?><!--">-->
+<!--            </div>-->
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" >
                 <div class = "row">
                 <div class = "col-md-12 col-lg-12 spacer20"></div></div>
                 <h3>South Notts Amateur Radio Club</h3>
                 <h1>Affiliated to The Radio Society of Great Britain</h1>
             </div>
-            <div class = "col-md-2 col-lg-2 align-content-center">
-                <img src="<?php echo LOGO; ?>">
+            <div class = "col-md-2 col-lg-2">
+                <img src="<?php echo LOGO; ?>" class="imagecenter">
             </div>
         </div>
 
