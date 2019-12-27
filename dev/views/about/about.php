@@ -5,7 +5,7 @@ include "../core/semi-header.php";
  * This is the opening page, presenting a welcome and a brief note about the club
 */
 ?>
-    <div class = "row"><div class = "col-md-12 col-lg-12 spacer20"></div></div>
+<div class = "row"><div class = "col-md-12 col-lg-12 spacer20"></div></div>
 <div class="row">
 
 
