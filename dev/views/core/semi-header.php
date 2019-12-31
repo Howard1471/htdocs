@@ -3,7 +3,7 @@
 <head>
 
 <?php
-include "../../core/Constants.php";
+include "../../includes/Constants.php";
 if (!isset($_SESSION['user'])) {
     header("Location:".ROOT_INDEX);
 }
@@ -21,16 +21,16 @@ $menu = new Menuing();
 
 
         <div class="row footerboxes">
-            <div class = "col-md-2 col-lg-2 align-content-center">
+            <div class = "col-md-2 col-lg-2 logocentre">
                 <img src="<?php echo LOGO; ?>">
             </div>
-            <div class="col-md-8 col-lg-8 align-content-center" >
+            <div class="col-md-8 col-lg-8 logocentre" >
                 <div class = "row">
                 <div class = "col-md-12 col-lg-12 spacer20"></div></div>
                 <h3>South Notts Amateur Radio Club</h3>
                 <h1>Affiliated to The Radio Society of Great Britain</h1>
             </div>
-            <div class = "col-md-2 col-lg-2 align-content-center">
+            <div class = "col-md-2 col-lg-2 logocentre">
                 <img src="<?php echo LOGO; ?>">
             </div>
         </div>
