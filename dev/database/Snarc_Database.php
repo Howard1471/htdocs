@@ -1,13 +1,4 @@
 <?php
-global $DiaryDate, $DiaryTitle, $DiaryText;
-global $NewsDate, $NewsTitle, $NewsText, $NewsReporter;
-global $host,$user,$pwd,$DBname,$Connect_status;
-global $Sitename, $username;
-global $Callsign, $Firstname, $Surname, $Position, $Email, $Contact, $Admin_Status, $locator;
-global $ArticleRef, $DocTitle, $UploadFile, $DocAuthor, $ArticleDate, $ArticleLive, $TempFile, $OldFilename, $NewFileToUpload;
-global $EventRef, $EventName, $UploadFile, $Sponsor, $SEventDate, $SEventLive, $TempFile;
-global $HyperlinkRef, $HyperlinkTitle, $Hyperlink, $HyperlinkBy, $HyperlinkWhen, $HyperlinkVisible;
-global $Acallsign, $Aheadline1, $Atext1, $Aheadline2, $Atext2, $Aheadline3, $Atext3, $Aheadline4, $Atext4;
 
 class Snarc_Database
 {
@@ -38,8 +29,7 @@ class Snarc_Database
     protected function ConnectToDatabase()
 	{
 
-		$Connect_status = false;
-		//Connect to host
+    	//Connect to host
 		try {
 			$this->link = mysqli_connect($this->host, $this->user, $this->pwd, $this->dbName);
 		} catch (mysqli_sql_exception $e) {
