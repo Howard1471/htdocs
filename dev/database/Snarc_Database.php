@@ -20,7 +20,6 @@ class Snarc_Database
 	}
 
 	/***********************************************************************************************/
-
     /**
      * ConnectToTable()
      * makes the database connection and connects to the database
@@ -28,7 +27,6 @@ class Snarc_Database
      */
     protected function ConnectToDatabase()
 	{
-
     	//Connect to host
 		try {
 			$this->link = mysqli_connect($this->host, $this->user, $this->pwd, $this->dbName);
@@ -48,11 +46,19 @@ class Snarc_Database
 		}
 		$this->Connect_status = true;
 	}
+	/**********************************************************************************************/
     //Expose the connection status.
 	public function getConnectionStatus()
     {
         return $this->Connect_status;
     }
+    /********************************************************************************************/
+    public function closeDatabase()
+    {
+        $this->link->close();
+    }
+
+
 
     //SELECT
     public function selectQuery($queryStr)
@@ -62,14 +68,37 @@ class Snarc_Database
         } else {
             return null;
         }
-
-
     }
 
+    //INSERT
+    public function insertQuery( $queryStr )
+    {
+        if($this->Connect_status == true) {
+            $result = mysqli_query( $queryStr );
+        } else {
+            return null;
+        }
+    }
 
     //UPDATE
-    //INSERT
+    public function updateQuery( $queryStr )
+    {
+        if($this->Connect_status == true) {
+            $result = mysqli_query( $queryStr );
+        } else {
+            return null;
+        }
+    }
+
     //DELETE
+    public function deleteQuery( $queryStr )
+    {
+        if($this->Connect_status == true) {
+            $result = mysqli_query( $queryStr );
+        } else {
+            return null;
+        }
+    }
 
 
 }
