@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 
     //control handles for all the dash panels
-    var contactSendBtn = document.getElementById('newsItemInsertButton');
+    var contactSendBtn = document.getElementById('contactSendBtn');
 
 
     //Insert news Item
@@ -21,7 +21,7 @@ $(document).ready(function(){
             + "&contactEmail=" + contactEmail
             + "&contactSubject=" + contactSubject
             + "&contactMessage=" + contactMessage;
-        //alert("outgoing URL:\r\n" + "vm/insertNewsItem.php" + postString);
+        alert("outgoing URL:\r\n" + "email_contact_form.php" + postString);
 
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "vm/email_contact_form.php", true);

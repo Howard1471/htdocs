@@ -6,17 +6,17 @@
 
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><p>Name</p></div>
-                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"><input type="text" size = "50" id="contactName" placeholder="Name and/or callsign here"></div>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"><input type="text" size = "50" id="contactName" placeholder="Name and/or callsign here" autocomplete="on"></div>
             </div>
 
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><p>Email</p></div>
-                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"><input type="text" size= "50" id="contactEmail" placeholder="your contact email address here"></div>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"><input type="text" size= "50" id="contactEmail" placeholder="your contact email address here" autocomplete="on"></div>
             </div>
 
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><p>Subject</p></div>
-                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"><input type="text" size= "50" id="contactSubject" placeholder="The subject of your enquiry here"></div>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"><input type="text" size= "50" id="contactSubject" placeholder="The subject of your enquiry here" autocomplete="off"></div>
             </div>
 
             <div class="row">

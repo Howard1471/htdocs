@@ -14,6 +14,5 @@
 
 <!--<script src= --><?php //echo ROOT."/assets/js/snarc.js";?><!-- ></script>-->
 
-
 </body>
 </html>
