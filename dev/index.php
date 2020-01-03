@@ -19,6 +19,7 @@ $(function() {
         var screenWidth = screen.width;
         //alert("Screen Width: " + screenWidth);
         window.location = "views/core/screensessionsetting.php?screenW=" + screenWidth;
+    });
 
 </script>
 </body>
