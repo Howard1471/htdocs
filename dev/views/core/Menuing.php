@@ -14,7 +14,6 @@ class Menuing
         'News',
         'Diary',
         'Articles',
-        'Technical',
         'Contact',
 
         ];
@@ -25,7 +24,6 @@ class Menuing
         'views/news/news.php',
         'views/diary/diary.php',
         'views/articles/articles.php',
-        'views/technical/technical.php',
         'views/contact/contact.php',
         'views/login/login_start.php',
 
@@ -38,6 +36,27 @@ class Menuing
     public function getMainURLs()
     {
         return $this->mainURLs;
+    }
+
+    protected $shortMenuArray = [
+        'Home',
+        'About',
+        'Diary',
+        'Contact',
+        ];
+    protected $shortURLs = [
+        'index.php',
+        'views/about/about.php',
+        'views/diary/diary.php',
+        'views/contact/contact.php',
+    ];
+    public function getShortMenu()
+    {
+        return $this->shortMenuArray;
+    }
+    public function getShortURLs()
+    {
+        return $this->shortURLs;
     }
 
 
