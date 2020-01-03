@@ -26,7 +26,7 @@
 
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-                    <input type="button" id="sendBtn" value="Send" class="btn-send-email"/>
+                    <input type="button" id="contactSendBtn" value="Send" class="btn-send-email"/>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                 </div>
