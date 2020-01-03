@@ -1,6 +1,4 @@
 <?php
-
-echo "Silence is Golden";
 session_start();
 $_SESSION['user'] = "user";
 
@@ -21,10 +19,6 @@ $(function() {
         var screenWidth = screen.width;
         //alert("Screen Width: " + screenWidth);
         window.location = "views/core/screensessionsetting.php?screenW=" + screenWidth;
-        // $.ajax({ 
-        //     url: 'views/main/start.php',
-        // });
-    });
 
 </script>
 </body>

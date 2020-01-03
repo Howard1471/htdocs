@@ -3,7 +3,7 @@
 <head>
 
 <?php
-include "../../core/Constants.php";
+include "../../assets/Constants.php";
 if (!isset($_SESSION['user'])) {
     header("Location:".ROOT_INDEX);
 }
