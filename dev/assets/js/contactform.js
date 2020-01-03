@@ -24,7 +24,7 @@ $(document).ready(function(){
         //alert("outgoing URL:\r\n" + "vm/insertNewsItem.php" + postString);
 
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "vm/insertNewsItem.php", true);
+        xhttp.open("POST", "vm/email_contact_form.php", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send(postString);
 

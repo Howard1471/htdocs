@@ -16,16 +16,17 @@ class EmailHandler
 
     protected $name;
     protected $email;
-    protected $confirm;
+    protected $subject;
     protected $messagetext;
     protected $timestamp;
     protected $random_hash;
     protected $headers;
 
-    public function __construct($contactName, $contactEmail, $contactMessage)
+    public function __construct($contactName, $contactEmail, $contactSubject ,$contactMessage)
     {
         $this->name = $contactName;
         $this->email = $contactEmail;
+        $this->subject = $contactSubject;
         $this->messagetext = $contactMessage;
     }
 
@@ -40,7 +41,7 @@ class EmailHandler
         $this->headers .= 'Cc: ' . $this->CCAddr . "\r\n"; // CC the senders address
         $this->headers .= 'Bcc: ' . $this->Blindcc . "\r\n"; // BCC if needed
     }
-    protected function Mail_Sender()
+    public function Mail_Sender()
     {
 
 //This function will mail the contact form only
@@ -63,7 +64,7 @@ class EmailHandler
 
         // * hosts Copy
         // Subject line
-        $subject = "Contact Message from " . $this->Website;
+        //$subject = "Contact Message from " . $this->Website;
         // create message text to send
 //        $hostMessage = $this->name;
 //        $hostMessage .= " has sent you a message via the website.\n\n";
@@ -79,7 +80,7 @@ class EmailHandler
 
         //If this is still under test, do not send actual mail
         if ($_SERVER['SERVER_NAME'] == "localhost") {
-            $this->FakeMailer($to, $this->Source, $this->CCAddr, $this->Blindcc, $subject, $hostHTML);
+            $this->FakeMailer($to, $this->Source, $this->CCAddr, $this->Blindcc, $this->subject, $hostHTML);
             return;
         }
     // $to, $from, $cc, $bcc, $subject, $message
@@ -109,8 +110,8 @@ class EmailHandler
         //send the email
         //Mail_Sender( $name,  $Source, $Destination, $CCAddr, $Blindcc, "Contact Message from " . $Website , $OutgoingMsg );
         //mail($to_email_address,$subject,$message,[$headers],[$parameters]);
-        // "Reply-To:" . $email . "\r\n"
-        $mail_sent = mail($to, $subject, $message, $this->headers . $ReplyAddr . $typeHeaders);
+         "Reply-To:" . $this->email . "\r\n";
+        $mail_sent = mail($to, $this->subject, $message, $this->headers . $ReplyAddr . $typeHeaders);
         //if the message is sent successfully print "Mail sent". Otherwise print "Mail failed"
         dd($mail_sent ? " Mail sent - " : " Mail failed - ");
 
