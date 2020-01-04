@@ -23,7 +23,7 @@ $(document).ready(function(){
         var postString = "newsTitle=" + newsTitle
             + "&newsAuthor=" + newsAuthor + "&newsDate=" +
             newsDate + "&newsText=" + newsText + "&emailNote=" + emailCheckbox;
-        //alert("outgoing URL:\r\n" + "vm/insertNewsItem.php" + postString);
+       console.log("outgoing URL:" + "vm/insertNewsItem.php ?" + postString);
 
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "vm/insertNewsItem.php", true);
