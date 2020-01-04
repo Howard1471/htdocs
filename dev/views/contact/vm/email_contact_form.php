@@ -1,8 +1,10 @@
 <?php
 //This code calls the emailer to send out a contact form email
+include "../../core/semi-header.php";
+
 
 if( isset($_POST['contactName']) ){
-    $contactName = $_POST['contactName'];
+    echo "POST variable is set";
 } else {
     echo "POST variable is not set";
 }
