@@ -21,7 +21,8 @@ $(document).ready(function(){
             + "&contactEmail=" + contactEmail
             + "&contactSubject=" + contactSubject
             + "&contactMessage=" + contactMessage;
-        alert("outgoing URL:\r\n" + "email_contact_form.php" + postString);
+
+        console.log("outgoing URL:" + "email_contact_form.php ?" + postString);
 
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "http://localhost/dev/views/contact/vm/email_contact_form.php", true);

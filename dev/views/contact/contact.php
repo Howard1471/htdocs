@@ -26,5 +26,5 @@ include "../core/semi-header.php";
 </div>
 <div class = "row"><div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 spacer20"></div></div>
 
-<script src= <?php echo ROOT."/assets/js/contactform.js";?> ></script>
+
 <?php include "../core/footer.php"; ?>
