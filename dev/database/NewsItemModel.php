@@ -20,13 +20,17 @@ class NewsItemModel
     }
 
 
-    //Insert an item into the news Item table
+    //Insert an item into the news Item table, returns true/false
     public function insertNewsItem( $newsItem )
     {
-        //$newsItem: [title, author, data, text]
+        //$newsItem: [title, author, date, text]
+        $columnStr = " ( newstitle, newsdate, newsauthor, newstext ) ";
+        $valuesStr = " ('" . $newsItem['title'] . "','" . $newsItem['date'] . "','" . $newsItem['author'] . "','" . $newsItem['text'] . "')";
 
+        $queryStr = "INSERT INTO snarc_newsitems" . $columnStr . " VALUES " . $valuesStr;
 
-
+        $result = $this->databaseModel->insertQuery($queryStr);
+        return $result;
     }
 
 

@@ -2,8 +2,6 @@
 
 class Snarc_Database
 {
-
-
 	protected $host = "localhost";
 	protected $user = "howkee33_dbase";
 	protected $pwd = "R@d10Clu65";
@@ -13,6 +11,7 @@ class Snarc_Database
 	protected $db_Selection;
 
 	protected $Sitename = "snarc";
+
 
 	public function __construct()
 	{
@@ -31,16 +30,16 @@ class Snarc_Database
 		try {
 			$this->link = mysqli_connect($this->host, $this->user, $this->pwd, $this->dbName);
 		} catch (mysqli_sql_exception $e) {
-			dd("Connect DB Exception : ". $e->getMessage());
+			var_dump("Connect DB Exception : ". $e->getMessage());
             $this->Connect_status = false;
             return;
 		}
 
 		//connect to the database
 		try {
-			$db_Selection = mysqli_select_db($this->dbName);
+			$db_Selection = mysqli_select_db($this->link, $this->dbName);
 		} catch (mysqli_sql_exception $e) {
-			dd("Select DB Exception : ". $e->getMessage());
+            var_dump("Select DB Exception : ". $e->getMessage());
             $this->Connect_status = flase;
             return;
 		}
@@ -64,27 +63,28 @@ class Snarc_Database
     public function selectQuery($queryStr)
     {
         if($this->Connect_status == true) {
-            $result = mysqli_query( $queryStr );
+            $result = mysqli_query($this->link, $queryStr );
         } else {
             return null;
         }
     }
 
-    //INSERT
+    //INSERT - returns true/false
     public function insertQuery( $queryStr )
     {
         if($this->Connect_status == true) {
-            $result = mysqli_query( $queryStr );
+            $result = mysqli_query($this->link, $queryStr );
         } else {
-            return null;
+            return false;
         }
+        return $result;
     }
 
     //UPDATE
     public function updateQuery( $queryStr )
     {
         if($this->Connect_status == true) {
-            $result = mysqli_query( $queryStr );
+            $result = mysqli_query($this->link, $queryStr );
         } else {
             return null;
         }
@@ -94,7 +94,7 @@ class Snarc_Database
     public function deleteQuery( $queryStr )
     {
         if($this->Connect_status == true) {
-            $result = mysqli_query( $queryStr );
+            $result = mysqli_query($this->link, $queryStr );
         } else {
             return null;
         }
