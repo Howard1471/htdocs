@@ -22,26 +22,11 @@ $menu = new Menuing();
 <body >
 <div class="row footerboxes">
 
-<?php
-//Remove left hand logo for small devices
-if( $menuType == 'long'){
-    echo "<div class = 'col-md-2 col-lg-2'><img src='";
-    echo LOGO;
-    echo "' class='imagecenter' ></div>";
-}
-?>
 
-
-<!--        <div class="row footerboxes">-->
-<!--            <div class = "col-md-2 col-lg-2 logocentre">-->
-<!--                <img src="--><?php //echo LOGO; ?><!--">-->
-<!--            </div>-->
-<!--            <div class="col-md-8 col-lg-8 logocentre" >-->
-
-<!--            <div class = "col-xs-0 col-sm-0 col-md-0 col-lg-2 ">-->
-<!--                <img src="--><?php //echo LOGO; ?><!--">-->
-<!--            </div>-->
-<!--            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" >-->
+            <div class = "col-xs-0 col-sm-0 col-md-0 col-lg-2 ">
+                <img src="<?php echo LOGO; ?>" class="imagecenter">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" >
 
                 <div class = "row">
                 <div class = "col-md-12 col-lg-12 spacer20"></div></div>
