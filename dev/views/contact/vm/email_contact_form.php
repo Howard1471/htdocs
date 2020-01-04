@@ -4,18 +4,16 @@ include "../../../emailer/EmailHandler.php";
 
 if( isset($_POST['contactName']) ){
     console_log("POST variable is set");
-    $contactName = $_POST['contactName'];
-    $contactEmail = htmlspecialchars($_POST['contactEmail']);
-    $contactSubject = htmlspecialchars($_POST['contactSubject']);
-    $contactMessage = htmlspecialchars($_POST['contactMessage']);
-
-    $emailHandler = new EmailHandler($contactName, $contactEmail, $contactSubject, $contactMessage);
-    $emailHandler->Mail_Sender();
-
 } else {
     console_log("POST variable is not set");
 }
+$contactName = $_POST['contactName'];
+$contactEmail = htmlspecialchars($_POST['contactEmail']);
+$contactSubject = htmlspecialchars($_POST['contactSubject']);
+$contactMessage = htmlspecialchars($_POST['contactMessage']);
 
+$emailHandler = new EmailHandler($contactName, $contactEmail, $contactSubject, $contactMessage);
+$emailHandler->Contact_Mail_Sender();
 
 
 function console_log($data) {

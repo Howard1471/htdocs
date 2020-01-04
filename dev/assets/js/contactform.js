@@ -22,10 +22,10 @@ $(document).ready(function(){
             + "&contactSubject=" + contactSubject
             + "&contactMessage=" + contactMessage;
 
-        //console.log("outgoing URL:" + "email_contact_form.php ?" + postString);
+        console.log("outgoing URL:" + "email_contact_form.php ?" + postString);
 
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "http://localhost/dev/views/contact/vm/email_contact_form.php", true);
+        xhttp.open("POST", "http://snarc.org.uk/views/contact/vm/email_contact_form.php", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send(postString);
 
