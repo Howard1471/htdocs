@@ -2,7 +2,7 @@
 
 global $client_website;
 
-include "../core/Constants.php";
+include "../../../assets/Constants.php";
 
 class EmailHandler
 {
@@ -79,10 +79,10 @@ class EmailHandler
         $hostHTML = nl2br($normaltext);
 
         //If this is still under test, do not send actual mail
-        if ($_SERVER['SERVER_NAME'] == "localhost") {
-            $this->FakeMailer($to, $this->Source, $this->CCAddr, $this->Blindcc, $this->subject, $hostHTML);
-            return;
-        }
+//        if ($_SERVER['SERVER_NAME'] == "localhost") {
+//            $this->FakeMailer($to, $this->Source, $this->CCAddr, $this->Blindcc, $this->subject, $hostHTML);
+//            return;
+//        }
     // $to, $from, $cc, $bcc, $subject, $message
 
         ob_start(); //Turn on output buffering
@@ -110,7 +110,7 @@ class EmailHandler
         //send the email
         //Mail_Sender( $name,  $Source, $Destination, $CCAddr, $Blindcc, "Contact Message from " . $Website , $OutgoingMsg );
         //mail($to_email_address,$subject,$message,[$headers],[$parameters]);
-         "Reply-To:" . $this->email . "\r\n";
+         //"Reply-To:" . $this->email . "\r\n";
         $mail_sent = mail($to, $this->subject, $message, $this->headers . $ReplyAddr . $typeHeaders);
         //if the message is sent successfully print "Mail sent". Otherwise print "Mail failed"
         dd($mail_sent ? " Mail sent - " : " Mail failed - ");
