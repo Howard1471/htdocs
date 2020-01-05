@@ -39,5 +39,8 @@ $(document).ready(function(){
 
     });
 
+    $( function() {
+        $( "#newsDate" ).datepicker();
+    } );
 });
 
