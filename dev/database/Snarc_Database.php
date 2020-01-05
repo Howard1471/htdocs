@@ -59,13 +59,14 @@ class Snarc_Database
 
 
 
-    //SELECT
+    //SELECT returns false or assoc assay of results
     public function selectQuery($queryStr)
     {
         if($this->Connect_status == true) {
             $result = mysqli_query($this->link, $queryStr );
+            return mysqli_fetch_all($result,MYSQLI_ASSOC);
         } else {
-            return null;
+            return false;
         }
     }
 
@@ -102,4 +103,4 @@ class Snarc_Database
 
 
 }
-
+?>

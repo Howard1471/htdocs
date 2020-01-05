@@ -33,7 +33,16 @@ class NewsItemModel
         return $result;
     }
 
-
-
+    public function getNewsItems()
+    {
+        $queryStr = "Select * from snarc_newsitems";
+        $result = $this->databaseModel->selectQuery($queryStr);
+        if($result === false){
+            return null;
+        } else {
+            return $result;
+        }
+    }
 
 }
+?>
