@@ -3,7 +3,6 @@
 <head>
 
 <?php
-
 include "../../assets/Constants.php";
 
 if (!isset($_SESSION['user'])) {
@@ -11,12 +10,9 @@ if (!isset($_SESSION['user'])) {
 }
 $menuType = $_SESSION['menutype'];
 
-include "meta.php";
-include "Menuing.php";
-
+include "../../includes/meta.php";
+include "../../includes/Menuing.php";
 $menu = new Menuing();
-
-
 ?>
 
 </head>

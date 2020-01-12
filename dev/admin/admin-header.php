@@ -3,10 +3,7 @@
 <head>
 
     <?php
-    include "../includes/Constants.php";
-
-    $_SESSION['user'] = "admin";
-    $_SESSION['menutype'] = "long";
+    include "../assets/Constants.php";
 
     //If no user type has been set then return to the home page
     if (!isset($_SESSION['user'])) {
@@ -19,16 +16,18 @@
         header("Location:".ROOT_INDEX);
     }
 
-    include "../includes/meta.php";
-    include "../includes/MenuService.php";
+    $_SESSION['user'] = "admin";
+    $_SESSION['menutype'] = "long";
 
-    $menu = new MenuService();
+    include "../includes/meta.php";
+    include "../includes/Menuing.php";
+
+    $menu = new Menuing();
     ?>
+
 
 </head>
 <body >
-
-
        <div class="row footerboxes">
             <div class = "col-md-2 col-lg-2">
                 <img src="<?php echo LOGO; ?>" class = "admincentre">
@@ -48,6 +47,7 @@
             <div class="col-sm-12 col-md-12 col-lg-6 bg_black">
                 <div class="menubar">
                 <?php
+
                 $menuContent = $menu->getAdminMenuArray();
                 $menuURLs = $menu->getAdminURLs();
                 $menuEntries = count($menuContent);
@@ -61,6 +61,4 @@
             </div>
             <div class="col-sm-0 col-md-0 col-lg-3 bg_black"></div>
         </div>
-
-
     <div class="container-fluid" >

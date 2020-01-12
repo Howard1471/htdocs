@@ -1,6 +1,4 @@
-<?php
 
-?>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,5 +12,6 @@
 <link rel="stylesheet" href="<?php echo ROOT; ?>/stylesheets/header.css" >
 <link rel="stylesheet" href="<?php echo ROOT; ?>/stylesheets/footer.css" >
 <link rel="stylesheet" href="<?php echo ROOT; ?>/stylesheets/admin.css" >
-
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="shortcut icon" href="http://snarc.org.uk/favicon.ico">
 <title>South Notts ARC</title>

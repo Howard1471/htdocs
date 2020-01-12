@@ -29,7 +29,7 @@
                     <p>Date :</p>
                 </div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft">
-                    <input type="text" id="newsDate" >
+                    <input type="text" id="newsDate" autocomplete="off">
                 </div>
             </div>
             <div class="row">

@@ -1,7 +1,7 @@
 <?php
 
 
-class MenuService
+class Menuing
 {
 
     public function __construct(){
@@ -16,7 +16,7 @@ class MenuService
         'Articles',
         'Contact',
 
-    ];
+        ];
 
     protected $mainURLs = [
         'index.php',
@@ -43,7 +43,7 @@ class MenuService
         'About',
         'Diary',
         'Contact',
-    ];
+        ];
     protected $shortURLs = [
         'index.php',
         'views/about/about.php',
@@ -64,18 +64,14 @@ class MenuService
         'Home',
         'Diary',
         'News',
-        'Articles',
-        'Email',
-        'Logout',
+
     ];
 
     protected $adminURLs = [
         'index.php',
-        'admin/diaryinput.php',
-        'admin/newsinput.php',
-        'admin/articlesetup.php',
-        'admin/emailsetup.php',
-        'index.php',
+        'views/diary/diary.php',
+        'views/news/news.php',
+
     ];
 
     public function getAdminMenuArray()
