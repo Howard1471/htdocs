@@ -25,7 +25,7 @@
      </div>
      <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 footerboxes horizAlign">
-            <h1>Content is copyright South Notts Amateur Radio Club (2019) unless otherwise stated.</h1>
+            <h1>Content is copyright South Notts Amateur Radio Club (2020) unless otherwise stated.</h1>
         </div>
      </div>
 </div>

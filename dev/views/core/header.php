@@ -35,25 +35,22 @@ $menu = new Menuing();
             <div class="col-md-6 col-lg-6 bg_black">
                 <div class="menubar">
 
-                        <?php
+                    <?php
+                    if( $menuType == 'long'){
+                        $menuContent = $menu->getMainMenu();
+                        $menuURLs = $menu->getMainURLs();
+                    } else {
+                        $menuContent = $menu->getShortMenu();
+                        $menuURLs = $menu->getShortURLs();
+                    }
 
-                        if( $menuType == 'long'){
-                            $menuContent = $menu->getMainMenu();
-                            $menuURLs = $menu->getMainURLs();
-                        } else {
-                            $menuContent = $menu->getShortMenu();
-                            $menuURLs = $menu->getShortURLs();
-                        }
-                        
-                        $menuEntries = count($menuContent);
-                        echo"<ul>";
-                        for( $i = 0; $i < $menuEntries ; $i++ ){
-                            echo "<li><a href='".ROOT."/".$menuURLs[$i]."'>".$menuContent[$i]."</a></li>";
-                        }
-                        echo"</ul>";
-
-                        //include "../core/menuService.php";
-                        ?>
+                    $menuEntries = count($menuContent);
+                    echo"<ul>";
+                    for( $i = 0; $i < $menuEntries ; $i++ ){
+                        echo "<li><a href='".ROOT."/".$menuURLs[$i]."'>".$menuContent[$i]."</a></li>";
+                    }
+                    echo"</ul>";
+                    ?>
 
                 </div>
             </div>

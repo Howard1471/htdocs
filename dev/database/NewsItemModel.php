@@ -43,6 +43,17 @@ class NewsItemModel
             return $result;
         }
     }
+    public function getLimitedNewsItems()
+    {
+        $queryStr = "Select * from snarc_newsitems LIMIT 8";
+        $result = $this->databaseModel->selectQuery($queryStr);
+        if($result === false){
+            return null;
+        } else {
+            return $result;
+        }
+    }
+
     public function getNewsItem( $newsRef )
     {
         $queryStr = "Select * from snarc_newsitems where newsitem_id = ". $newsRef;

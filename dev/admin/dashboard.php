@@ -2,6 +2,13 @@
 
 <?php
 include "admin-header.php";
+
+if( isset($_GET['admin'])){
+    $username = $_GET['admin'];
+    }else{
+    header("Location:".ROOT_INDEX);
+}
+
 ?>
 
 <div class="row">

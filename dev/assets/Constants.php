@@ -6,6 +6,7 @@ const ROOT = "http://localhost/dev";
 
 const GROUP_NAME = "South Notts Amateur Radio Club";
 const LOGO = ROOT."/images/snarc_logo_colour2.png";
+const DOCUMENTS = ROOT."/documents/";
 const ROOT_INDEX = ROOT."/index.php";
 
 const EMAILER_SOURCE = "admin@snarc.org.uk";

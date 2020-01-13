@@ -3,9 +3,7 @@
 <head>
 
 <?php
-
 include "../../assets/Constants.php";
-
 
 if (!isset($_SESSION['user'])) {
     header("Location:".ROOT_INDEX);
@@ -21,8 +19,6 @@ $menu = new Menuing();
 </head>
 <body >
 <div class="row footerboxes">
-
-
             <div class = "col-xs-0 col-sm-0 col-md-0 col-lg-2 ">
                 <img src="<?php echo LOGO; ?>" class="imagecenter">
             </div>

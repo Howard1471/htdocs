@@ -12,7 +12,7 @@ include "../../database/NewsItemModel.php";
 
 $newsItemModel = new NewsItemModel();
 if( $newsItemModel->getConnectionStatus()) {
-    $newsArray = $newsItemModel->getAllNewsItems();
+    $newsArray = $newsItemModel->getLimitedNewsItems();
     include "newsPartial.php";
 }else{
     include "newsFailure.php";
