@@ -10,15 +10,15 @@
         <form id="newsForm" method="post">
             <div class="row">
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
-                    <p>Title :</p>
+                    <p>Title</p>
                 </div>
-                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft">
-                   <input type="text" id="newsTitle" size="50" placeholder="News Item Title" autocomplete="off">
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft ">
+                   <input class="fullwidth" type="text" id="newsTitle" size="50" placeholder="News Item Title" autocomplete="off">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
-                    <p>Author :</p>
+                    <p>Author</p>
                 </div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft">
                     <input type="text" id="newsAuthor" size="25" placeholder="Author's name/callsign" autocomplete="off">
@@ -26,7 +26,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2  ">
-                    <p>Date :</p>
+                    <p>Date</p>
                 </div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft">
                     <input type="text" id="newsDate" autocomplete="off">
@@ -34,10 +34,10 @@
             </div>
             <div class="row">
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
-                    <p>text :</p>
+                    <p>text</p>
                 </div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft">
-                    <textarea id="newsText" cols="65" rows="5" placeholder="news text"></textarea>
+                    <textarea class="fullwidth" id="newsText"  rows="5" placeholder="news text"></textarea>
                 </div>
             </div>
             <div class="row">

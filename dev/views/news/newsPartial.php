@@ -13,7 +13,7 @@
         foreach( $newsArray as $newsItemTitle=>$newsItemValue ){
             echo "<div class='row' >";
                 echo "<div class= 'col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left'>";
-                echo "<a class='newsAnchor' href='#' >".$newsItemValue['newstitle']."</a>";
+                echo "<a class='newsAnchor' href='newsDetail.php?newsref=".$newsItemValue['newsitem_id']."' >".$newsItemValue['newstitle']."</a>";
                 echo "</div></div>";
 
             echo "<div class='row' >";
@@ -22,7 +22,7 @@
                 echo "</div>";
 
                 echo "<div class= 'col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right'>";
-                echo "<p>Published: ".$newsItemValue['newsdate']."</p>";
+                echo "<p>Published: ".substr($newsItemValue['newsdate'],0,10)."</p>";
                 echo "</div>";
             echo "</div>";
         }

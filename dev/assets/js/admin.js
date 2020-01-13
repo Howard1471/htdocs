@@ -31,7 +31,8 @@ $(document).ready(function(){
        console.log("outgoing URL:" + "vm/insertNewsItem.php ?" + postString);
 
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "http://snarc.org.uk/admin/vm/insertNewsItem.php", true);
+        //xhttp.open("POST", "http://snarc.org.uk/admin/vm/insertNewsItem.php", true);
+        xhttp.open("POST", "vm/insertNewsItem.php", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send(postString);
 

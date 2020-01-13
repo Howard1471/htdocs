@@ -33,7 +33,7 @@ class NewsItemModel
         return $result;
     }
 
-    public function getNewsItems()
+    public function getAllNewsItems()
     {
         $queryStr = "Select * from snarc_newsitems";
         $result = $this->databaseModel->selectQuery($queryStr);
@@ -43,6 +43,22 @@ class NewsItemModel
             return $result;
         }
     }
+    public function getNewsItem( $newsRef )
+    {
+        $queryStr = "Select * from snarc_newsitems where newsitem_id = ". $newsRef;
+        $result = $this->databaseModel->selectQuery($queryStr);
+        if($result === false){
+            return null;
+        } else {
+            return $result;
+        }
+    }
+    function console_log($data) {
+        $output = $data;
+        if (is_array($output))
+            $output = implode(',', $output);
+        $msg = 'console.log(' . json_encode($output, JSON_HEX_TAG).');';
 
+        echo $msg;
+    }
 }
-?>
