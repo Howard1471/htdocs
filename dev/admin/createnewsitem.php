@@ -37,8 +37,8 @@
             </div>
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
-                    <input type="checkbox" id = "emailCheckbox">Email Notification<br>
-                    <input type="checkbox" id = "memberCheckbox">Members Only<br>
+                    <input type="checkbox" id = "emailNewsCheckbox">Email Notification<br>
+                    <input type="checkbox" id = "memberNewsCheckbox">Members Only<br>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
                     <input type="button" id="newsItemInsertButton" value="Insert" class = "btn-send-email"/>
