@@ -6,10 +6,11 @@ $(document).ready(function(){
 
     //control handles for all the dash panels
     var newsItemBtn = document.getElementById('newsItemInsertButton');
+    var articleInsertButton = document.getElementById('articleInsertButton');
     var emailNewsCheckbox = false;
     var memberNewsCheckbox = false;
-    var emailArticleCheckbox = false;
-    var memberArticleCheckbox = false;
+    var pdfArticleCheckbox = 0;
+    var memberArticleCheckbox = 0;
 
     //Insert news Item
     $(newsItemBtn).click(function(){
@@ -64,10 +65,10 @@ $(document).ready(function(){
         var articleFile = document.getElementById('articleFile').value;
 
         if(document.getElementById('emailArticleCheckbox').checked){
-            emailArticleCheckbox = "true";
+            pdfArticleCheckbox = 1;
         }
         if(document.getElementById('memberArticleCheckbox').checked){
-            memberArticleCheckbox = "true";
+            memberArticleCheckbox = 1;
         }
 
         articleDate = reverseDate(articleDate);
@@ -75,7 +76,7 @@ $(document).ready(function(){
 
         var postString = "articleTitle=" + articleTitle
             + "&articleAuthor=" + articleAuthor + "&articleDate=" +
-            articleDate + "&articleFile=" + articleFile + "&emailNote=" + emailArticleCheckbox
+            articleDate + "&articleFile=" + articleFile + "&pdfArticleCheckbox=" + pdfArticleCheckbox
             + "&memberArticleCheckbox=" + memberArticleCheckbox;
 
         var xhttp = new XMLHttpRequest();

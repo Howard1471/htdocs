@@ -21,13 +21,16 @@ class ArticlesModel
 
     public function insertArticle( $articleArray)
     {
-        //Article Array: [ title, author, date, filename, level ]
+        //Article Array: [ title, author, date, filename, email, level ]
 
-        $columnStr = " ( articletitle, articledate, articleauthor, articlefile, articlelevel ) ";
-        $valuesStr = " ('" . $articleArray['title'] . "','" . $articleArray['date'] . "','" . $articleArray['author'] . "','" . $articleArray['filename'] . "')";
+        $columnStr = " ( articletitle, articleauthor, articledate, articlefile, articletype, articlelevel ) ";
+        $valuesStr = " ('" . $articleArray['title'] . "','" . $articleArray['author'] . "','"
+            . $articleArray['date'] . "','" . $articleArray['file']. "',"
+            . $articleArray['email']. "," . $articleArray['level']. ")";
 
         $queryStr = "INSERT INTO snarc_articles" . $columnStr . " VALUES " . $valuesStr;
 
+        $this->console_log($queryStr);
         $result = $this->databaseModel->insertQuery($queryStr);
         return $result;
     }
@@ -53,4 +56,12 @@ class ArticlesModel
         }
     }
 
+    private function console_log($data) {
+        $output = $data;
+        if (is_array($output))
+            $output = implode(',', $output);
+        $msg = 'console.log(' . json_encode($output, JSON_HEX_TAG).');';
+
+        echo "<script>".$msg."</script>";
+    }
 }
