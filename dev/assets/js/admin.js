@@ -2,7 +2,8 @@
 
 $(document).ready(function(){
     //Document ready for the whole dashboard
-
+    var today = new Date();
+    var timeStr = " "+ today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + " ";
 
     //control handles for all the dash panels
     var newsItemBtn = document.getElementById('newsItemInsertButton');
@@ -14,7 +15,7 @@ $(document).ready(function(){
 
     //Insert news Item
     $(newsItemBtn).click(function(){
-        var today = new Date()
+        var today = new Date();
         var timeStr = " "+ today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + " ";
         //get all the items from the form
         var newsTitle = document.getElementById('newsTitle').value;
@@ -54,9 +55,10 @@ $(document).ready(function(){
     });
 
     //Upload a document file
-    $(articleInsertButton).click(function(){
+    $(articleInsertButton1).click(function(){
         var today = new Date();
         var timeStr = " "+ today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + " ";
+
 
         //get all the items from the form
         var articleTitle = document.getElementById('articleTitle').value;
@@ -74,10 +76,15 @@ $(document).ready(function(){
         articleDate = reverseDate(articleDate);
         articleDate = articleDate + timeStr;
 
-        var postString = "articleTitle=" + articleTitle
-            + "&articleAuthor=" + articleAuthor + "&articleDate=" +
-            articleDate + "&articleFile=" + articleFile + "&pdfArticleCheckbox=" + pdfArticleCheckbox
-            + "&memberArticleCheckbox=" + memberArticleCheckbox;
+        var articleName = document.getElementById('articleFile').files[0].name;
+
+        var postString = "articleTitle=" + articleTitle +
+            "&articleAuthor=" + articleAuthor +
+            "&articleDate=" + articleDate +
+            "&articleFile=" + articleFile +
+            "&articleName=" + articleName +
+            "&pdfArticleCheckbox=" + pdfArticleCheckbox +
+            "&memberArticleCheckbox=" + memberArticleCheckbox;
 
         var xhttp = new XMLHttpRequest();
         //xhttp.open("POST", "http://snarc.org.uk/admin/vm/insertArticleItem.php", true);
@@ -85,12 +92,19 @@ $(document).ready(function(){
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send(postString);
 
+        document.getElementById('articleTitle').value = "";
+        document.getElementById('articleAuthor').value = "";
+        document.getElementById('articleDate').value = "";
+        document.getElementById('articleFile').value = "";
+        document.getElementById('articleTitle').checked = false;
+        document.getElementById('articleTitle').checked = false;
 
     });
 
     $( function() {
         $("#articleDate").datepicker({ dateFormat: 'dd/mm/yy' });
     } );
+
     $( function() {
         $("#newsDate").datepicker({ dateFormat: 'dd/mm/yy' });
     } );

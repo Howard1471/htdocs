@@ -3,7 +3,7 @@
 <head>
 
     <?php
-    include "../assets/Constants.php";
+    include_once "../assets/Constants.php";
 
     //If no user type has been set then return to the home page
     if (!isset($_SESSION['user'])) {

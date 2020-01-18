@@ -57,12 +57,14 @@ class Menuing
 
     protected $adminMenuArray = [
         'Home',
+        'Articles',
         'Diary',
         'News',
     ];
 
     protected $adminURLs = [
         'index.php',
+        'admin/createarticleitem.php',
         'views/diary/diary.php',
         'views/news/news.php',
     ];

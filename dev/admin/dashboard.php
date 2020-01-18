@@ -16,7 +16,6 @@ include "admin-header.php";
 
     </div>
     <div class="col-md-4 col-lg-4 dashpanel">
-        <?php include "createarticleitem.php"; ?>
     </div>
     <div class="col-md-4 col-lg-4 dashpanel">
         <?php include "createnewsitem.php"; ?>

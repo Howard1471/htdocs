@@ -25,7 +25,7 @@ class ArticlesModel
 
         $columnStr = " ( articletitle, articleauthor, articledate, articlefile, articletype, articlelevel ) ";
         $valuesStr = " ('" . $articleArray['title'] . "','" . $articleArray['author'] . "','"
-            . $articleArray['date'] . "','" . $articleArray['file']. "',"
+            . $articleArray['date'] . "','" . $articleArray['name']. "',"
             . $articleArray['email']. "," . $articleArray['level']. ")";
 
         $queryStr = "INSERT INTO snarc_articles" . $columnStr . " VALUES " . $valuesStr;
