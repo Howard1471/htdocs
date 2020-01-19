@@ -7,7 +7,8 @@
  */
 class Uploader
 {
-
+    //Return status of upload process
+    protected $uploadSuccess = false;
 
     public function __construct()
     {
@@ -28,13 +29,17 @@ class Uploader
         //set up the MIME type to check for.
 //        exec("file -bi " .$filename, $out);
 //            if ( $out != $mimeType) {
-                $success = move_uploaded_file( $tmp_name,$targetDir.$filename);
-                if($success){
+                $this->uploadSuccess = move_uploaded_file( $tmp_name,$targetDir.$filename);
+                if($this->uploadSuccess){
                     chmod($targetDir.$filename, 0755);
-                    $this->console_log("success in uploading");
                 }
 //            }
     }
+    public function getUploadSuccess()
+    {
+        return $this->uploadSuccess;
+    }
+
     public function upload_CheckExistance( $targetFile )
     {
         //Test for filename already existing

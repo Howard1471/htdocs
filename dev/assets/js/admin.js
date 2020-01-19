@@ -55,51 +55,51 @@ $(document).ready(function(){
     });
 
     //Upload a document file
-    $(articleInsertButton1).click(function(){
-        var today = new Date();
-        var timeStr = " "+ today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + " ";
-
-
-        //get all the items from the form
-        var articleTitle = document.getElementById('articleTitle').value;
-        var articleAuthor = document.getElementById('articleAuthor').value;
-        var articleDate = document.getElementById('articleDate').value;
-        var articleFile = document.getElementById('articleFile').value;
-
-        if(document.getElementById('emailArticleCheckbox').checked){
-            pdfArticleCheckbox = 1;
-        }
-        if(document.getElementById('memberArticleCheckbox').checked){
-            memberArticleCheckbox = 1;
-        }
-
-        articleDate = reverseDate(articleDate);
-        articleDate = articleDate + timeStr;
-
-        var articleName = document.getElementById('articleFile').files[0].name;
-
-        var postString = "articleTitle=" + articleTitle +
-            "&articleAuthor=" + articleAuthor +
-            "&articleDate=" + articleDate +
-            "&articleFile=" + articleFile +
-            "&articleName=" + articleName +
-            "&pdfArticleCheckbox=" + pdfArticleCheckbox +
-            "&memberArticleCheckbox=" + memberArticleCheckbox;
-
-        var xhttp = new XMLHttpRequest();
-        //xhttp.open("POST", "http://snarc.org.uk/admin/vm/insertArticleItem.php", true);
-        xhttp.open("POST", "vm/insertArticleItem.php", true);
-        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xhttp.send(postString);
-
-        document.getElementById('articleTitle').value = "";
-        document.getElementById('articleAuthor').value = "";
-        document.getElementById('articleDate').value = "";
-        document.getElementById('articleFile').value = "";
-        document.getElementById('articleTitle').checked = false;
-        document.getElementById('articleTitle').checked = false;
-
-    });
+    // $(articleInsertButton1).click(function(){
+    //     var today = new Date();
+    //     var timeStr = " "+ today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + " ";
+    //
+    //
+    //     //get all the items from the form
+    //     var articleTitle = document.getElementById('articleTitle').value;
+    //     var articleAuthor = document.getElementById('articleAuthor').value;
+    //     var articleDate = document.getElementById('articleDate').value;
+    //     var articleFile = document.getElementById('articleFile').value;
+    //
+    //     if(document.getElementById('emailArticleCheckbox').checked){
+    //         pdfArticleCheckbox = 1;
+    //     }
+    //     if(document.getElementById('memberArticleCheckbox').checked){
+    //         memberArticleCheckbox = 1;
+    //     }
+    //
+    //     articleDate = reverseDate(articleDate);
+    //     articleDate = articleDate + timeStr;
+    //
+    //     var articleName = document.getElementById('articleFile').files[0].name;
+    //
+    //     var postString = "articleTitle=" + articleTitle +
+    //         "&articleAuthor=" + articleAuthor +
+    //         "&articleDate=" + articleDate +
+    //         "&articleFile=" + articleFile +
+    //         "&articleName=" + articleName +
+    //         "&pdfArticleCheckbox=" + pdfArticleCheckbox +
+    //         "&memberArticleCheckbox=" + memberArticleCheckbox;
+    //
+    //     var xhttp = new XMLHttpRequest();
+    //     //xhttp.open("POST", "http://snarc.org.uk/admin/vm/insertArticleItem.php", true);
+    //     xhttp.open("POST", "vm/insertArticleItem.php", true);
+    //     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //     xhttp.send(postString);
+    //
+    //     document.getElementById('articleTitle').value = "";
+    //     document.getElementById('articleAuthor').value = "";
+    //     document.getElementById('articleDate').value = "";
+    //     document.getElementById('articleFile').value = "";
+    //     document.getElementById('articleTitle').checked = false;
+    //     document.getElementById('articleTitle').checked = false;
+    //
+    // });
 
     $( function() {
         $("#articleDate").datepicker({ dateFormat: 'dd/mm/yy' });

@@ -36,7 +36,7 @@ include "admin-header.php";
                     <p>Date</p>
                 </div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft">
-                    <input type="text" id="articleDate" autocomplete="off">
+                    <input type="text" id="articleDate" >
                 </div>
             </div>
 
@@ -66,9 +66,11 @@ include "admin-header.php";
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
                     <input type="checkbox" id = "emailArticleCheckbox" checked>PDF Document<br>
                     <input type="checkbox" id = "memberArticleCheckbox">Members Only<br>
+                    <input type="hidden" id = "enabled" value = true>
+
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                    <input type="submit" id="articleInsertButton" value="Upload" class = "btn-send-email"/>
+                    <input type="submit" name="articleInsertButton" value="Upload" class = "btn-send-email"/>
                 </div>
             </div>
         </form>
