@@ -23,7 +23,7 @@ include "admin-header.php";
                 echo "<p>Incorrect file type</p>";
                 break;
             default:
-                echo "<p>The cause of the problem is unknown</p>";
+                echo "<p>".$code."</p>";
         }
 
         ?>

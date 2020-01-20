@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-//const ROOT = "http://snarc.org.uk";
+
 const ROOT = "http://localhost/dev";
 
 const GROUP_NAME = "South Notts Amateur Radio Club";

@@ -1,5 +1,6 @@
 <?php
 /**
+ * Upload the file
  * Insert article Items into the database table
  *
  */
@@ -21,7 +22,9 @@ if(!isset($_POST['submit'])){
 }
 
 $filename = $_FILES['file_upload']['name'];
-$targetDir = "/documents/";
+
+$targetDir = DOCUMENTS;
+
 $fileType = strtolower(pathinfo($targetDir.$filename,PATHINFO_EXTENSION));
 if(file_exists($targetDir.$filename)){
     header("Location:../uploadfail.php?code=1");
@@ -39,6 +42,8 @@ $uploader = new Uploader();
 $uploader->upload_pdf($filename, $tmp_name, $targetDir );
 $uploadSuccess = $uploader->getUploadSuccess();
 
+var_dump($_POST);
+
 if(!$uploadSuccess){
     header("Location:../uploadfail.php/?code=4");
 } else {
@@ -54,11 +59,10 @@ if(!$uploadSuccess){
         'enabled' => htmlspecialchars($_POST['enabled']),
     ];
 
-    var_dump ($_POST);
 
-//console_log("Calling ArticlesModel:: ");
+
     $articleItem = new ArticlesModel();
-//Insert the details into the database table
+    //Insert the details into the database table
     $sqlResult = $articleItem->insertArticle($articleArray);
 }
 
@@ -68,5 +72,5 @@ function console_log($data) {
     if (is_array($output))
         $output = implode(',', $output);
 
-    echo $output;
+    echo "<script>".$output."</script>";
 }
