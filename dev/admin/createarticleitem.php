@@ -20,7 +20,7 @@ include "admin-header.php";
                     <p>Title</p>
                 </div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft ">
-                    <input class="fullwidth" type="text" id="articleTitle" size="50" placeholder="Article Title" autocomplete="off">
+                    <input class="fullwidth" type="text" name="articleTitle" size="50" placeholder="Article Title" autocomplete="off">
                 </div>
             </div>
             <div class="row">
@@ -28,7 +28,7 @@ include "admin-header.php";
                     <p>Author</p>
                 </div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft">
-                    <input type="text" id="articleAuthor" size="25" placeholder="Author's name/callsign" autocomplete="off">
+                    <input type="text" name="articleAuthor" size="25" placeholder="Author's name/callsign" autocomplete="off">
                 </div>
             </div>
             <div class="row">
@@ -36,7 +36,7 @@ include "admin-header.php";
                     <p>Date</p>
                 </div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newsLeft">
-                    <input type="text" id="articleDate" >
+                    <input type="text" id="articleDate" name = "articleDate" >
                 </div>
             </div>
 
@@ -64,9 +64,9 @@ include "admin-header.php";
 
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
-                    <input type="checkbox" id = "emailArticleCheckbox" checked>PDF Document<br>
+                    <input type="checkbox" id = "pdfArticleCheckbox" checked>PDF Document<br>
                     <input type="checkbox" id = "memberArticleCheckbox">Members Only<br>
-                    <input type="hidden" id = "enabled" value = true>
+                    <input type="checkbox" id = "enabled" checked>Document visible<br>
 
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">

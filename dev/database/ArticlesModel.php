@@ -6,6 +6,8 @@ class ArticlesModel
 
     protected $databaseModel;
     protected $connectionStatus;//getConnectionStatus()
+    protected $tablename = "snarc_articles";
+    protected $primaryKey = "article_id";
 
     public function __construct()
     {
@@ -23,12 +25,13 @@ class ArticlesModel
     {
         //Article Array: [ title, author, date, filename, email, level ]
 
-        $columnStr = " ( articletitle, articleauthor, articledate, articlefile, articletype, articlelevel ) ";
+        $columnStr = " ( articletitle, articleauthor, articledate, articlefile, memberarticle, articletype, docenabled ) ";
         $valuesStr = " ('" . $articleArray['title'] . "','" . $articleArray['author'] . "','"
-            . $articleArray['date'] . "','" . $articleArray['name']. "',"
-            . $articleArray['email']. "," . $articleArray['level']. ")";
+            . $articleArray['date'] . "','" . $articleArray['file']. "',"
+            . $articleArray['memberCheck'].",". $articleArray['pdfCheck']. ","
+            . $articleArray['enabled']. ")";
 
-        $queryStr = "INSERT INTO snarc_articles" . $columnStr . " VALUES " . $valuesStr;
+        $queryStr = "INSERT INTO ".$this->tablename. " " .$columnStr. " VALUES " . $valuesStr;
 
         $this->console_log($queryStr);
         $result = $this->databaseModel->insertQuery($queryStr);
@@ -37,7 +40,7 @@ class ArticlesModel
 
     public function getAllArticles()
     {
-        $queryStr = "Select * from snarc_articles";
+        $queryStr = "Select * from ".$this->tablename;
         $result = $this->databaseModel->selectQuery($queryStr);
         if($result === false){
             return null;
@@ -47,7 +50,7 @@ class ArticlesModel
     }
     public function getArticle( $articleRef )
     {
-        $queryStr = "Select * from snarc_articles where newsitem_id = ". $articleRef;
+        $queryStr = "Select * from ".$this->tablename." WHERE ".$this->primaryKey." = ". $articleRef;
         $result = $this->databaseModel->selectQuery($queryStr);
         if($result === false){
             return null;

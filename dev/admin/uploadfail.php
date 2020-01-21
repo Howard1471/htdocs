@@ -27,9 +27,6 @@ include "admin-header.php";
         }
 
         ?>
-
-
-
     </div>
     <div class="col-xs-0 col-sm-0 col-md-4 col-lg-4 ">
     </div>
