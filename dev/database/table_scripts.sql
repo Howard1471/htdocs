@@ -39,6 +39,7 @@ CREATE TABLE snarc_articles (
     articleauthor VARCHAR(50) NOT NULL,
     articledate DATETIME NOT NULL,
     articlefile VARCHAR(50) NOT NULL,
-    articlelevel INTEGER NOT NULL,
-    articletype INTEGER NOT NULL
+    memberarticle INT(1) NOT NULL,
+    articletype INT(1) NOT NULL,
+    docenabled INT(1) NOT NULL
     )

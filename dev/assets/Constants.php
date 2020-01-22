@@ -3,6 +3,7 @@ session_start();
 
 
 const ROOT = "http://localhost/dev";
+//const ROOT = "http://snarc.org.uk";
 
 const GROUP_NAME = "South Notts Amateur Radio Club";
 const LOGO = ROOT."/images/snarc_logo_colour2.png";
