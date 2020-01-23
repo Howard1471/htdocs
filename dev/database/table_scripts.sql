@@ -41,4 +41,4 @@ CREATE TABLE snarc_articles (
     articlefile VARCHAR(50) NOT NULL,
     articlelevel INTEGER NOT NULL,
     articletype INTEGER NOT NULL
-    )
+    );
