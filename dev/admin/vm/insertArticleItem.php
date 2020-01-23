@@ -64,12 +64,15 @@ if(!$uploadSuccess){
         'enabled' => ( isset($_POST['enabled']) == true ? 1: 0),
     ];
 
+    $failStr = $articleArray['pdfCheck'];
+    header("Location:../uploadfail.php/?code='fail String'".$failStr);
+
     $articleItem = new ArticlesModel();
     //Insert the details into the database table
     $sqlResult = $articleItem->insertArticle($articleArray);
 
 
-    header("Location:../uploadsuccess.php/?filename=".$filename);
+    header("Location:../uploadsuccess.php/?filename=".$failStr);
 
 }
 

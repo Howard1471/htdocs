@@ -34,6 +34,7 @@ class ArticlesModel
         $queryStr = "INSERT INTO ".$this->tablename. " " .$columnStr. " VALUES " . $valuesStr;
 
         $this->console_log($queryStr);
+
         $result = $this->databaseModel->insertQuery($queryStr);
         return $result;
     }
