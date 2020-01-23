@@ -64,9 +64,9 @@ include "admin-header.php";
 
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
-                    <input type="checkbox" id = "pdfArticleCheckbox" checked>PDF Document<br>
-                    <input type="checkbox" id = "memberArticleCheckbox">Members Only<br>
-                    <input type="checkbox" id = "enabled" checked>Document visible<br>
+                    <input type="checkbox" name = "pdfArticleCheckbox" value="pdf" checked>PDF Document<br>
+                    <input type="checkbox" name = "memberArticleCheckbox" value="member">Members Only<br>
+                    <input type="checkbox" name = "enabled" checked value="visible">Document visible<br>
 
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">

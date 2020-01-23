@@ -8,6 +8,7 @@ include_once "../../assets/Constants.php";
 //Open an instance of the database handlers for articles
 include "../../database/Snarc_Database.php";
 include "../../database/ArticlesModel.php";
+include "../../includes/TimeAndDateServices.php";
 include "../../uploader/Uploader.php";
 //include "../../emailer/EmailHandler.php";
 
@@ -54,18 +55,19 @@ if(!$uploadSuccess){
     header("Location:../uploadfail.php/?code=4");
 } else {
     //success, store the table data
+    $dateConverter = new TimeAndDateServices();
     $articleArray = [
         'title' => $_POST['articleTitle'],
         'author' => htmlspecialchars($_POST['articleAuthor']),
-        'date' => htmlspecialchars($_POST['articleDate']),
+        'date' => $dateConverter->convertUKtoSQLDat( $_POST['articleDate']),
         'file' => $filename,
-        'pdfCheck' => ( isset($_POST['pdfArticleCheckbox']) == true ? 1: 0),
-        'memberCheck' => ( isset($_POST['memberArticleCheckbox']) == true ? 1: 0),
-        'enabled' => ( isset($_POST['enabled']) == true ? 1: 0),
+        'pdfCheck' => ( $_POST['pdfArticleCheckbox'] == 'pdf' ? 1: 0),
+        'memberCheck' => ( $_POST['memberArticleCheckbox'] == 'member' ? 1: 0),
+        'enabled' => ( $_POST['enabled'] == 'visible' ? 1: 0),
     ];
 
-    $failStr = $articleArray['pdfCheck'];
-    header("Location:../uploadfail.php/?code='fail String'".$failStr);
+
+    header("Location:../uploadfail.php/?code='fail String '".$failStr);
 
     $articleItem = new ArticlesModel();
     //Insert the details into the database table
