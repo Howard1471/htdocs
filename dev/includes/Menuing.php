@@ -56,17 +56,19 @@ class Menuing
 
 
     protected $adminMenuArray = [
-        'Home',
+        'Admin',
         'Articles',
         'Diary',
         'News',
+        'Home',
     ];
 
     protected $adminURLs = [
-        'index.php',
+        'admin/dashboard.php',
         'admin/createarticleitem.php',
         'views/diary/diary.php',
         'views/news/news.php',
+        'index.php',
     ];
 
     public function getAdminMenuArray()

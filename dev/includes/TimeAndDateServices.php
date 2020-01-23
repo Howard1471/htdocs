@@ -17,9 +17,8 @@ class TimeAndDateServices
     }
 
     /**
-     * setSQLDate takes a UK format date ( dd/mm/yyyy) and converts it into a SQL
-     * style date and time yyyy-mm-dd hh:mm:ss
-     * @param $newDate
+     * setSQLDate takes the $nowTime and converts it into a SQL
+     * style date only
      * @return string
      */
     public function getSQLDate()
@@ -27,6 +26,11 @@ class TimeAndDateServices
         return substr($this->nowTime, 0, 10);
     }
 
+    /**
+     * getDateUKFormat converts $nowTime and converts it into UK
+     * format dd/mm/yyyy
+     * @return string
+     */
     public function getDateUKFormat()
     {
         //yyyy-mm-dd
@@ -43,10 +47,11 @@ class TimeAndDateServices
      */
     public function convertUKtoSQLDat( $ukDate )
     {
-        //dd/mm/yyyyy
+        //dd/mm/yyyy
         return substr($ukDate, 6, 4)."-".
-            substr($ukDate, 4, 2)."-".
+            substr($ukDate, 3, 2)."-".
             substr($ukDate, 0, 2)." 00:00:00";
      }
+
 
 }

@@ -1,2 +1,8 @@
 
+RewriteEngine on
 
+
+#RewriteRuleRule articles/articlesDetail/(0-9)+ articlesDetail.php?articlesref=$1 [L,R=301]
+
+#'articlesDetail.php?articlesref=".$articlesValue['article_id'].
+#http://snarc.org.uk/views/articles/articlesDetail.php?articlesref=4

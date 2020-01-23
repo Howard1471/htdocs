@@ -49,7 +49,7 @@ class ArticlesModel
             return $result;
         }
     }
-    public function getArticle( $articleRef )
+    public function getArticleItem( $articleRef )
     {
         $queryStr = "Select * from ".$this->tablename." WHERE ".$this->primaryKey." = ". $articleRef;
         $result = $this->databaseModel->selectQuery($queryStr);

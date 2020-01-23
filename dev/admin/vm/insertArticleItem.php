@@ -13,7 +13,7 @@ include "../../uploader/Uploader.php";
 //include "../../emailer/EmailHandler.php";
 
 if( isset($_POST['articleTitle']) ){
-    console_log("POST articleTitle set: \n");
+        console_log("POST articleTitle set: \n");
     } else {
         console_log("POST variable is not set: \n");
     }
@@ -49,40 +49,36 @@ $tmp_name = $_FILES['file_upload']['tmp_name'];
 // upload the file here
 $uploader = new Uploader();
 $uploader->upload_pdf($filename, $tmp_name, $targetDir );
-
 $uploadSuccess = $uploader->getUploadSuccess();
+
 if(!$uploadSuccess){
     header("Location:../uploadfail.php/?code=4");
 } else {
     //success, store the table data
+    $dateStr = $_POST['articleDate'];
     $dateConverter = new TimeAndDateServices();
     $articleArray = [
         'title' => $_POST['articleTitle'],
         'author' => htmlspecialchars($_POST['articleAuthor']),
-        'date' => $dateConverter->convertUKtoSQLDat( $_POST['articleDate']),
+        'date' => $dateConverter->convertUKtoSQLDat($dateStr),
         'file' => $filename,
         'pdfCheck' => ( $_POST['pdfArticleCheckbox'] == 'pdf' ? 1: 0),
         'memberCheck' => ( $_POST['memberArticleCheckbox'] == 'member' ? 1: 0),
         'enabled' => ( $_POST['enabled'] == 'visible' ? 1: 0),
     ];
 
-
-    header("Location:../uploadfail.php/?code='fail String '".$failStr);
-
     $articleItem = new ArticlesModel();
     //Insert the details into the database table
     $sqlResult = $articleItem->insertArticle($articleArray);
 
-
-    header("Location:../uploadsuccess.php/?filename=".$failStr);
+    header("Location:../uploadsuccess.php/?filename=".$filename);
 
 }
-
 function console_log($data) {
-    //Output to dev tools Network>Response
     $output = $data;
     if (is_array($output))
         $output = implode(',', $output);
+    $msg = 'console.log(' . json_encode($output, JSON_HEX_TAG).');';
 
-    echo "<script>".$output."</script>";
+    echo $msg;
 }

@@ -12,16 +12,16 @@
                 foreach( $articlesArray as $articlesItem=>$articlesValue ){
                     echo "<div class='row' >";
                     echo "<div class= 'col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left'>";
-                    echo "<a class='newsAnchor' href='articlesDetail.php?articlesref=".$articlesValue['article_id']."' >".$articlesValue['articlestitle']."</a>";
+                    echo "<a class='newsAnchor' href='articlesDetail.php?articlesref=".$articlesValue['article_id']."' >".$articlesValue['articletitle']."</a>";
                     echo "</div></div>";
 
                     echo "<div class='row' >";
                     echo "<div class= 'col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left'>";
-                    echo "<p>Author: ".$articlesValue['articlesauthor']."</p>";
+                    echo "<p>Author: ".$articlesValue['articleauthor']."</p>";
                     echo "</div>";
 
                     echo "<div class= 'col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right'>";
-                    echo "<p>Published: ".substr($articlesValue['articlesdate'],0,10)."</p>";
+                    echo "<p>Published: ".substr($articlesValue['articledate'],0,10)."</p>";
                     echo "</div>";
                     echo "</div>";
                 }
